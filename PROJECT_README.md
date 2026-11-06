@@ -115,8 +115,7 @@ results and source hashes are in `evaluation/curation.json`.
 
 ## Report and submission
 
-The group and member details are filled in. `report.md` contains a proposed
-responsibility allocation; confirm the actual contributions before submission.
+The group and member details are filled in `report.md`.
 The team has confirmed free-tier use of Codex and Google AI Studio. To rebuild the PDF and ZIP:
 
 ```bash
@@ -125,8 +124,8 @@ python scripts/build_report.py
 python scripts/package_submission.py
 ```
 
-The PDF is limited to four pages. The archive is `dist/submission_draft.zip`;
-its name reflects the contribution confirmation still needed. It includes code, selected
+The PDF is limited to four pages. The archive is `dist/CS6855_Group_project_8.zip`. 
+It includes code, selected
 tools, datasets, answers, traces and the report. API keys, model caches and
 virtual environments are excluded. The report contains the required AI-assistance
 acknowledgment.
