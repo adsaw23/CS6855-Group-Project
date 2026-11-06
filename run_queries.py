@@ -64,34 +64,29 @@ def main():
             try:
                 # Reset derived graphs per question, making runs order-independent.
                 store = GraphStore.from_directory(args.data)
-                if query["graph_id"] is None:
-                    result = {
-                        "status": "clarification_needed",
-                        "answer_text": "Which graph should I analyse?",
-                        "answer": {"type": "text", "value": "Please specify the graph."},
-                        "tools_used": [],
-                    }
-                else:
-                    # Record missing-data evidence as an actual tool result.
-                    if query["graph_id"] not in {g["graph_id"] for g in store.list_graphs()}:
-                        from orchestrator.utilities import list_graphs
+                # Record missing-data evidence as an actual tool result.
+                # With no graph field, the planner decides from the question text.
+                if query["graph_id"] is not None and query["graph_id"] not in {
+                    g["graph_id"] for g in store.list_graphs()
+                }:
+                    from orchestrator.utilities import list_graphs
 
-                        preflight_tools.append("builtin.list_graphs")
-                        trace(
-                            {
-                                "event": "tool_call",
-                                "call_id": "preflight",
-                                "name": "list_graphs",
-                                "arguments": {},
-                                "output": list_graphs(store),
-                            }
-                        )
-                        raise ValueError(
-                            f"Graph {query['graph_id']!r} is not loaded. Add the official dataset to {args.data}."
-                        )
-                    client = LLMClient(args.cache, trace)
-                    agent = Agent(registry, store, client, trace, args.max_calls)
-                    result = agent.run(query)
+                    preflight_tools.append("builtin.list_graphs")
+                    trace(
+                        {
+                            "event": "tool_call",
+                            "call_id": "preflight",
+                            "name": "list_graphs",
+                            "arguments": {},
+                            "output": list_graphs(store),
+                        }
+                    )
+                    raise ValueError(
+                        f"Graph {query['graph_id']!r} is not loaded. Add the official dataset to {args.data}."
+                    )
+                client = LLMClient(args.cache, trace)
+                agent = Agent(registry, store, client, trace, args.max_calls)
+                result = agent.run(query)
             except Exception as exc:
                 message = str(exc)
                 # No request headers or credentials are logged.

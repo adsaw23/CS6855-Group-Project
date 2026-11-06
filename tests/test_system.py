@@ -161,6 +161,28 @@ class SystemTests(unittest.TestCase):
         self.assertTrue(any(e["event"] == "answer_evidence" for e in logs))
         self.assertEqual("one#/result", logs[0]["output"]["evidence_ref"])
 
+    def test_missing_graph_field_reaches_planner(self):
+        # A graph named only in the question text must not be auto-clarified.
+        client = ScriptedClient(
+            [
+                tool_call("list_graphs", {}, "one"),
+                tool_call("graph_summary", {"graph_id": "test"}, "two"),
+                tool_call(
+                    "finish",
+                    {
+                        "status": "answered",
+                        "answer_type": "number",
+                        "expression": json.dumps({"ref": "two#/result/edges"}),
+                    },
+                    "final",
+                ),
+            ]
+        )
+        result = Agent(self.registry, self.store(), client, lambda e: None).run(
+            {"query_id": "x", "graph_id": None, "question": "How many edges does test have?"}
+        )
+        self.assertEqual({"type": "number", "value": 4}, result["answer"])
+
     def test_subgraph_agent_chain(self):
         def second(messages):
             output = json.loads(messages[-1]["content"])
