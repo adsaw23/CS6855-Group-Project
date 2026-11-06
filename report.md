@@ -84,7 +84,7 @@ Responsible for `tests/test_system.py`, `scripts/evaluate.py`, and `scripts/audi
 
 ### Shailendra Kumar (EE25D014) — Integration and Demo Lead
 
-Responsible for `run_queries.py`, `orchestrator/queries.py`, `PROJECT_README.md`, `scripts/build_report.py`, and `scripts/package_submission.py`. Verify input handling, the one-command execution, clean installation, report layout, and ZIP contents. Also, prepare the project demonstration and coordinate technical integration with Aditya.
+Responsible for `run_queries.py`, `orchestrator/queries.py`, `README.md`, `scripts/build_report.py`, and `scripts/package_submission.py`. Verify input handling, the one-command execution, clean installation, report layout, and ZIP contents. Also, prepare the project demonstration and coordinate technical integration with Aditya.
 
 ## AI assistance
 

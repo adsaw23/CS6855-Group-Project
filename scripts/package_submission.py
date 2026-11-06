@@ -7,7 +7,7 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 FILES = [
     "README.md",
-    "PROJECT_README.md",
+    "REGISTRY_ORIGINAL_README.md",
     "requirements.txt",
     "requirements-dev.txt",
     ".env.example",
