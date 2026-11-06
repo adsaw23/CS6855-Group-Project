@@ -232,7 +232,9 @@ def oracle(name, g, r, store, output, args):
     elif name == "ego_network":
         h = store.get(output["result_graph_id"])._graph
         expected = nx.ego_graph(g, args["node"])
-        if set(h) != set(expected) or set(h.edges) != set(expected.edges):
+        if set(h) != set(expected) or {frozenset(e) for e in h.edges} != {
+            frozenset(e) for e in expected.edges
+        }:
             raise AssertionError("Wrong ego subgraph")
     elif name == "k_hop_neighborhood":
         h = store.get(output["result_graph_id"])._graph
@@ -366,11 +368,11 @@ def main():
     args = parser.parse_args()
     reports = []
     candidates = {}
-    for path in sorted(Path(args.source).glob("*/*/tool.json")):
+    for path in sorted(Path(args.source).resolve().glob("*/*/tool.json")):
         m = json.loads(path.read_text())
         record = {
             "implementation_id": m["implementation_id"],
-            "source": str(path.relative_to(ROOT)),
+            "source": path.relative_to(ROOT).as_posix(),
             "name": m["name"],
         }
         try:
