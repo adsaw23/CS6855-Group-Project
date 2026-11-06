@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import json
 import os
 from pathlib import Path
+import re
 from graphkit.graph import GraphStore
 from orchestrator.agent import Agent
 from orchestrator.llm import LLMClient
@@ -13,6 +14,19 @@ from orchestrator.queries import read_queries
 from orchestrator.registry import Registry
 
 ROOT = Path(__file__).resolve().parent
+
+
+def trace_names(queries):
+    """Map each query ID to a unique, path-safe trace file stem."""
+    names, used = {}, set()
+    for q in queries:
+        stem = re.sub(r"[^A-Za-z0-9_-]", "_", q["query_id"]) or "query"
+        candidate, n = stem, 2
+        while candidate in used:
+            candidate, n = f"{stem}_{n}", n + 1
+        used.add(candidate)
+        names[q["query_id"]] = candidate
+    return names
 
 
 def main():
@@ -43,8 +57,9 @@ def main():
     if args.only and out.exists():
         records = {a["query_id"]: a for a in json.loads(out.read_text())}
     answers = list(records.values())
+    stems = trace_names(all_queries)
     for query in queries:
-        trace_path = trace_dir / (query["query_id"] + ".jsonl")
+        trace_path = trace_dir / (stems[query["query_id"]] + ".jsonl")
         with trace_path.open("w", encoding="utf-8") as f:
 
             def trace(event):
@@ -64,6 +79,8 @@ def main():
             try:
                 # Reset derived graphs per question, making runs order-independent.
                 store = GraphStore.from_directory(args.data)
+                if not query["question"]:
+                    raise ValueError("The query file gives no question text for this ID.")
                 # Record missing-data evidence as an actual tool result.
                 # With no graph field, the planner decides from the question text.
                 if query["graph_id"] is not None and query["graph_id"] not in {

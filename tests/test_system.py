@@ -1,4 +1,5 @@
 import hashlib
+import re
 import json
 from pathlib import Path
 import subprocess
@@ -73,15 +74,29 @@ class SystemTests(unittest.TestCase):
         self.assertEqual({"query_id", "question", "graph_id"}, set(queries[0]))
         self.assertIsNone(queries[23]["graph_id"])
 
-    def test_query_path_and_duplicate_rejected(self):
+    def test_query_rows_are_normalised_not_fatal(self):
+        from run_queries import trace_names
+
         with tempfile.TemporaryDirectory() as d:
             p = Path(d) / "q.json"
-            p.write_text(json.dumps([{"query_id": "../escape", "question": "x"}]))
-            with self.assertRaises(ValueError):
-                read_queries(p)
-            p.write_text(json.dumps([{"query_id": "x", "question": "x"}] * 2))
-            with self.assertRaises(ValueError):
-                read_queries(p)
+            rows = [
+                {"query_id": "../escape", "question": "x"},
+                {"query_id": "x", "question": "x"},
+                {"query_id": "x", "question": "duplicate"},
+                {"id": 7, "Question": "numeric id", "Graph": "karate"},
+                {"question": "no id"},
+                {"query_id": "blank", "question": " "},
+            ]
+            p.write_text(json.dumps(rows))
+            with patch("sys.stderr"):
+                queries = read_queries(p)
+            self.assertEqual(["../escape", "x", "7", "blank"], [q["query_id"] for q in queries])
+            self.assertEqual("karate", queries[2]["graph_id"])
+            self.assertEqual("", queries[3]["question"])
+            stems = trace_names(queries + [{"query_id": "__escape"}])
+            self.assertEqual("___escape", stems["../escape"])
+            self.assertEqual(len(stems), len(set(stems.values())))
+            self.assertTrue(all(re.fullmatch(r"[A-Za-z0-9_-]+", s) for s in stems.values()))
 
     def test_evidence_literal_and_failed_call_rejected(self):
         with self.assertRaises(ValueError):
