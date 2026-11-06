@@ -28,7 +28,7 @@ chains are max flow with UNIT capacities, never interaction weights.
 For multi-step queries use the returned result_graph_id as the next graph_id, including
 communities, k-cores, ego networks and filtered graphs. An ego network includes the center;
 exclude it from rankings if the question asks about friends or says 'apart from'.
-Use top_k large enough to include excluded nodes. Inspect available attribute names before
+Use top_k large enough to include excluded nodes, but when a tool already excludes them(e.g. include_source=false) request exactly N for "top N" questions. If the question asks for N items, the final answer must contain exactly N: use a slice expression to cut the ranked list to N before finishing. Inspect available attribute names before
 filtering. filter_nodes can produce an undirected projection in the same call for MST.
 Prefer <=5 graph-tool calls, but correctness takes precedence. Never silently accept truncated
 paths/lists, unconverged results or incomplete community search as a complete answer.
