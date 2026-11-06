@@ -15,13 +15,21 @@
     {
       "query_id": "q02",
       "tool_calls_replayed": 1,
-      "llm_calls": 2,
+      "llm_calls": 3,
       "cache_hits": 0,
       "status": "answered",
       "passed": true
     },
     {
       "query_id": "q03",
+      "tool_calls_replayed": 2,
+      "llm_calls": 3,
+      "cache_hits": 0,
+      "status": "answered",
+      "passed": true
+    },
+    {
+      "query_id": "q04",
       "tool_calls_replayed": 3,
       "llm_calls": 4,
       "cache_hits": 0,
@@ -29,17 +37,9 @@
       "passed": true
     },
     {
-      "query_id": "q04",
-      "tool_calls_replayed": 4,
-      "llm_calls": 5,
-      "cache_hits": 0,
-      "status": "answered",
-      "passed": true
-    },
-    {
       "query_id": "q05",
       "tool_calls_replayed": 1,
-      "llm_calls": 2,
+      "llm_calls": 3,
       "cache_hits": 0,
       "status": "answered",
       "passed": true
@@ -64,15 +64,15 @@
       "query_id": "q08",
       "tool_calls_replayed": 1,
       "llm_calls": 2,
-      "cache_hits": 2,
+      "cache_hits": 0,
       "status": "answered",
       "passed": true
     },
     {
       "query_id": "q09",
-      "tool_calls_replayed": 2,
-      "llm_calls": 3,
-      "cache_hits": 1,
+      "tool_calls_replayed": 1,
+      "llm_calls": 2,
+      "cache_hits": 0,
       "status": "answered",
       "passed": true
     },
@@ -86,9 +86,9 @@
     },
     {
       "query_id": "q11",
-      "tool_calls_replayed": 7,
-      "llm_calls": 9,
-      "cache_hits": 1,
+      "tool_calls_replayed": 3,
+      "llm_calls": 4,
+      "cache_hits": 0,
       "status": "answered",
       "passed": true
     },
@@ -96,7 +96,7 @@
       "query_id": "q12",
       "tool_calls_replayed": 2,
       "llm_calls": 3,
-      "cache_hits": 3,
+      "cache_hits": 0,
       "status": "answered",
       "passed": true
     },
@@ -110,8 +110,8 @@
     },
     {
       "query_id": "q14",
-      "tool_calls_replayed": 2,
-      "llm_calls": 3,
+      "tool_calls_replayed": 1,
+      "llm_calls": 2,
       "cache_hits": 0,
       "status": "answered",
       "passed": true
@@ -119,31 +119,31 @@
     {
       "query_id": "q15",
       "tool_calls_replayed": 4,
-      "llm_calls": 5,
+      "llm_calls": 6,
       "cache_hits": 0,
       "status": "answered",
       "passed": true
     },
     {
       "query_id": "q16",
-      "tool_calls_replayed": 4,
-      "llm_calls": 5,
+      "tool_calls_replayed": 3,
+      "llm_calls": 4,
       "cache_hits": 0,
       "status": "answered",
       "passed": true
     },
     {
       "query_id": "q17",
-      "tool_calls_replayed": 5,
-      "llm_calls": 6,
-      "cache_hits": 1,
+      "tool_calls_replayed": 3,
+      "llm_calls": 4,
+      "cache_hits": 0,
       "status": "answered",
       "passed": true
     },
     {
       "query_id": "q18",
-      "tool_calls_replayed": 4,
-      "llm_calls": 6,
+      "tool_calls_replayed": 3,
+      "llm_calls": 4,
       "cache_hits": 0,
       "status": "answered",
       "passed": true
@@ -160,7 +160,7 @@
       "query_id": "q20",
       "tool_calls_replayed": 2,
       "llm_calls": 3,
-      "cache_hits": 1,
+      "cache_hits": 0,
       "status": "answered",
       "passed": true
     },
@@ -168,15 +168,15 @@
       "query_id": "q21",
       "tool_calls_replayed": 3,
       "llm_calls": 4,
-      "cache_hits": 2,
+      "cache_hits": 0,
       "status": "answered",
       "passed": true
     },
     {
       "query_id": "q22",
-      "tool_calls_replayed": 4,
-      "llm_calls": 5,
-      "cache_hits": 3,
+      "tool_calls_replayed": 3,
+      "llm_calls": 4,
+      "cache_hits": 0,
       "status": "answered",
       "passed": true
     },
@@ -198,8 +198,8 @@
     },
     {
       "query_id": "q25",
-      "tool_calls_replayed": 2,
-      "llm_calls": 3,
+      "tool_calls_replayed": 1,
+      "llm_calls": 2,
       "cache_hits": 0,
       "status": "clarification_needed",
       "passed": true
@@ -222,8 +222,8 @@
     },
     {
       "query_id": "q28",
-      "tool_calls_replayed": 1,
-      "llm_calls": 2,
+      "tool_calls_replayed": 3,
+      "llm_calls": 5,
       "cache_hits": 0,
       "status": "unsupported",
       "passed": true
@@ -238,9 +238,9 @@
     },
     {
       "query_id": "q30",
-      "tool_calls_replayed": 2,
-      "llm_calls": 4,
-      "cache_hits": 3,
+      "tool_calls_replayed": 1,
+      "llm_calls": 2,
+      "cache_hits": 0,
       "status": "unsupported",
       "passed": true
     }
