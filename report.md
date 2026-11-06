@@ -88,8 +88,7 @@ Responsible for `run_queries.py`, `orchestrator/queries.py`, `PROJECT_README.md`
 
 ## AI assistance
 
-OpenAI Codex was used for debugging and testing. Google AI Studio's Gemini provides runtime function calling.
-Both services were used on free tiers, as confirmed by the team.
+OpenAI Codex was used for debugging and testing purposes. Google AI Studio's Gemini was used for runtime function calling. Both services were used under their respective free-tier plans, as confirmed by the team.
 
 ## Running the project
 
