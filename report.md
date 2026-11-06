@@ -31,7 +31,7 @@ The graphs are airports (500 nodes, 20,058 edges), karate (34, 78), lesmis (77, 
 
 The final public run successfully passes all 30 out of 30 questions against the supplied workbook. The scorer uses a 0.1% numeric tolerance, compares rankings in the required order, and checks that course orderings satisfy every prerequisite. The answers are available in answers_public.json, while the score is recorded in evaluation/public_score.json.
 
-The run used a total of 68 graph and utility calls, with an average of 2.27 calls per question. Twenty-nine questions were completed using five or fewer calls. q11 required seven calls because it involved additional metadata, lookup, and projection calls. Reducing these additional calls remains a useful optimization.
+The run used a total of 55 graph and utility calls, with an average of 1.83 calls per question. Every question was completed using five or fewer calls; the most was four, for q15, which filtered the German airports before ranking them.
 
 All 30 traces pass a separate audit that reruns the tools, compares their complete outputs, and evaluates the recorded answer expressions. The local test suite contains 29 passing tests, including 54 numerical comparisons across six seeded random graphs. It also checks input parsing, source hashes, ambiguity handling, provider errors, subgraph chaining, and incremental reruns. The tests also pass when executed from an extracted submission ZIP.
 
