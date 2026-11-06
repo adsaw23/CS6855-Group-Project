@@ -120,7 +120,7 @@ def main():
             result = {
                 "query_id": query["query_id"],
                 **result,
-                "trace_file": os.path.relpath(trace_path, out.parent),
+                "trace_file": Path(os.path.relpath(trace_path, out.parent)).as_posix(),
             }
             trace({"event": "final_answer", "answer": result})
             records[query["query_id"]] = result
