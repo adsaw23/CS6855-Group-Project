@@ -1,0 +1,17 @@
+{
+  "name": "inspect_graph",
+  "description": "Inspect graph metadata and attribute names/values before filtering or assessing missing data.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "graph_id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "graph_id"
+    ],
+    "additionalProperties": false
+  },
+  "implementation_id": "builtin.inspect_graph"
+}

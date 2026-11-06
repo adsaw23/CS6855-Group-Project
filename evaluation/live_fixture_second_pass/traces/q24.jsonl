@@ -1,0 +1,2 @@
+{"timestamp": "2026-11-05T06:02:19.441011+00:00", "event": "query", "query": {"query_id": "q24", "graph_id": null, "question": "Which node is the most important?"}}
+{"timestamp": "2026-11-05T06:02:19.461482+00:00", "event": "final_answer", "answer": {"query_id": "q24", "status": "clarification_needed", "answer_text": "Which graph should I analyse?", "answer": {"type": "text", "value": "Please specify the graph."}, "tools_used": [], "trace_file": "traces/q24.jsonl"}}

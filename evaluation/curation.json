@@ -1,0 +1,2026 @@
+{
+  "networkx_version": "3.6.1",
+  "note": "Synthetic oracle tests; not official public-set end-to-end accuracy. Unrecognised output schemas fail curation without implying an algorithm bug. Embeddings use invariant checks, community heuristics partition/modularity checks.",
+  "tested": 186,
+  "passed": 125,
+  "selected": {
+    "articulation_points_bridges": {
+      "implementation_id": "articulation_points_bridges.3237bc9e",
+      "sha256": {
+        "tool.py": "8ef3252ee687c463546b06478e0ec06ce83a25691a650622757ac8da2799c428",
+        "tool.json": "e28fce26937c73be58cb754c662d0a036863aab28a256d72b9de87acb8bba14a",
+        "README.md": "061d265eba9315f0d74ec3a168d5e70139834cff1a4845c05c7cb29079ef5e01"
+      }
+    },
+    "betweenness_centrality": {
+      "implementation_id": "betweenness_centrality.2f7893e5",
+      "sha256": {
+        "tool.py": "c1f8d91512f4ca059f9a648882deffdfa13932485284078dae1fd1d6d803dae7",
+        "tool.json": "234fe1d26818abd63db8a62c0ce146cd2aca1592b0088e1f0386377ac85a4706",
+        "README.md": "f96b42e7b886219f4c2cf79edbffc4b07ebe06e183e540e271ef454241c339f7"
+      }
+    },
+    "bipartite_check": {
+      "implementation_id": "bipartite_check.3c8c3c69",
+      "sha256": {
+        "tool.py": "036cc13fe9a6269f5a4b66a9e6162c1af3a3728b1ed1742d2ecc5c385f9e1459",
+        "tool.json": "796fff7ec5299bfc3381f5bce480b3238d515ce90c0bd901f774632f20b70960",
+        "README.md": "d9df92b5cf94fb1b23798deb38839113f52cc08a9b36c380e4753271434a3ffb"
+      }
+    },
+    "bipartite_matching": {
+      "implementation_id": "bipartite_matching.3f28ff34",
+      "sha256": {
+        "tool.py": "ca8faae9e7a39e7d423ecb56decaf5e6a17a41d721d9a26f953c8e36d8af52d6",
+        "tool.json": "af15f3d36d82217eac4244ef2f74dced83bbdbb866f8e7c7d5daca764f9dd7f8",
+        "README.md": "ccfe765aa74ac1d6e4571c124208b7c1bfb363c4ba459cf9ddd63eb6b50cb71a"
+      }
+    },
+    "closeness_centrality": {
+      "implementation_id": "closeness_centrality.7065a2b5",
+      "sha256": {
+        "tool.py": "ff1adcf01f61898ca58e071bc65e9bb25a6c5a494c539719976e93ace42980de",
+        "tool.json": "fe908707e26e7e20555e8c97798f12ea0c7817698a878ecd31ff09b72e4f2c27",
+        "README.md": "52c001b16deba759adbf9e957831c936d90df514440bd1e52ad58859b080dd2b"
+      }
+    },
+    "clustering_coefficient": {
+      "implementation_id": "clustering_coefficient.da50612d",
+      "sha256": {
+        "tool.py": "da741795bceecbb15d0ed81b494660f6856370b61250800aca5a55629528ca87",
+        "tool.json": "9cedbcb10cebe920d6290a2b492d67a288f75e0bae9a6cf7b7278c538e03b5aa",
+        "README.md": "62db3d0758ed2234afe091b732ecf41154531180baa6e07eadc9a841baed86a8"
+      }
+    },
+    "connected_components": {
+      "implementation_id": "connected_components.4ebce3f0",
+      "sha256": {
+        "tool.py": "bd96a7e52b059c90ff84ebc8dd6d99d7bcbb1c5a09285beaa349cbf5ca3b9288",
+        "tool.json": "573246b8038c0786e7b9fb9ea7d88b86ce3243faae0623e9e234d3b0e7a19e1b",
+        "README.md": "877ce9a67fa364f63487b53dd86e7c002d38eb8d7504771474960508d706eb12"
+      }
+    },
+    "degree_centrality": {
+      "implementation_id": "degree_centrality.54d073a3",
+      "sha256": {
+        "tool.py": "73ed87531e20a2c966e8a49b62930aa26e3e696ce6f8d49c3eac56d899e3c1bc",
+        "tool.json": "ab09358dc5df5ae5ab4abc15c51020d6285aa750115c8d005028eb17bd8f1487",
+        "README.md": "d6408ca9e6e5282db779df935836e2fcb6d19e942cb8591e6a268ccb05679617"
+      }
+    },
+    "degree_distribution": {
+      "implementation_id": "degree_distribution.63fb3e40",
+      "sha256": {
+        "tool.py": "77b917c3189856f6eaf78b39b64e58fc6fe463985ee649bcd8efdd170dedb623",
+        "tool.json": "198fc6e473a6a5f23c5dda66549b73a31a09c97b3f97bc36c383fbc1d5b48784",
+        "README.md": "82dee015ccf9404b6a547878c395b6741470091696f9de958e7c492fe12487e0"
+      }
+    },
+    "diameter_eccentricity": {
+      "implementation_id": "diameter_eccentricity.991d1029",
+      "sha256": {
+        "tool.py": "5fb3b497922789a81282e54f53a56411a9121045884508d1c24478655e0965c6",
+        "tool.json": "0647023e48c0df2c2876c5cea7ae1f7d84208c33e8025a455ab7e63d5654f3b3",
+        "README.md": "c8a626074757d0f2b3a653d912200c5655cfb5ac9f30439ae2fbdd662d57a2ab"
+      }
+    },
+    "ego_network": {
+      "implementation_id": "ego_network.51616f3b",
+      "sha256": {
+        "tool.py": "615a958741643d3146b304f31cb7884c7f2aed0628e3c4955a160eb19d964bb2",
+        "tool.json": "6dd5ae4bfdbff140b85ca27ea16ea4142e572f2e664a3aa4d74540df06d17934",
+        "README.md": "762d8e4e5f636fff054c6f73fb2fe05f8c13fce0ddb2dc5da9e057d57af1f392"
+      }
+    },
+    "girvan_newman": {
+      "implementation_id": "girvan_newman.219c8a12",
+      "sha256": {
+        "tool.py": "31fb768801e92e8764c6508de08cb8e381d36ff8aeadea550f075c6ced92ce6c",
+        "tool.json": "f172d2a876cd4cf993ca4b511cac1869e85b62c49280d3f80b709d791b0194a9",
+        "README.md": "ab46796a76654101b7eab1b4f2d6c0099124e87a3fd8fc44816d6dba9cb7fa0f"
+      }
+    },
+    "graph_summary": {
+      "implementation_id": "graph_summary.2f7893e5",
+      "sha256": {
+        "tool.py": "e6460211f0008d08ca84addfd90169d6abaad4fd85c5d36d740bf6ae806dce46",
+        "tool.json": "3ba6c1a8699fa44ccdded125522c0a0c137119a3e88832dcd750b8bde5a5aa0c",
+        "README.md": "d47a96c2c70e9b20098566486f9086977d9ea9afa14789703e73f491178d20ee"
+      }
+    },
+    "greedy_coloring": {
+      "implementation_id": "greedy_coloring.4ebce3f0",
+      "sha256": {
+        "tool.py": "ec228c86f63fb3ad57caeca2e4c8cf5421d021eea0f52c7b3c632b487162ed87",
+        "tool.json": "40d6f11bfe1bcf9724666c5713549506723d5fbd3342a243bdc222d2f1a1ff7b",
+        "README.md": "5d16c175e2f8a6e37f718b7f92110c137ccad575a4d87a27232f6bb770d69465"
+      }
+    },
+    "hits": {
+      "implementation_id": "hits.219c8a12",
+      "sha256": {
+        "tool.py": "47cd1ce92356c08cb74652e75bcdd3ba159a5c2433747a86b65c6c2693897770",
+        "tool.json": "f87bce0224f673d78652673cece44492673451bb246dbe7314a13b54a3de48e0",
+        "README.md": "5df17658bf17f9c5d646dfe1ba944e0d57b3cef441b8e4ebb65029238e63d7e8"
+      }
+    },
+    "k_core": {
+      "implementation_id": "k_core.3f28ff34",
+      "sha256": {
+        "tool.py": "89643ef6d393febab4023f994ade45e93a8590096793b7d58eae132bd88253a6",
+        "tool.json": "ad0bb023aa98f2d6f2aea0cd37c0bceac62c9cf2153cf892209e7bd8b8e109a6",
+        "README.md": "5f7d80cf784040367477937d142fe7e311f8c321b7bb54d5afd7bbc6f2f5fe9c"
+      }
+    },
+    "k_hop_neighborhood": {
+      "implementation_id": "k_hop_neighborhood.32016695",
+      "sha256": {
+        "tool.py": "371232e3b17800f8d5be3f7ce196314f433cd78179414d35596650aa13d0c516",
+        "tool.json": "165e3aba3be11fd9c3f89ffa2ec9749e398bb98e9ca75464b20b5368641eeb35",
+        "README.md": "048015a0b00ecd0c5280e04682cda0f41dca9aedea5cc0cf2440899d988a968d"
+      }
+    },
+    "label_propagation": {
+      "implementation_id": "label_propagation.39bca602",
+      "sha256": {
+        "tool.py": "4025f597b167bd39ec08a27c52356bef66f8e1dbcdf0676e510226b1ead52498",
+        "tool.json": "0cdf4fdf5f715fc4f3c71db39b1bf00971f38bb3f468a251043d42b32b1628d5",
+        "README.md": "0176e0450f8adf73498fb2e8874c7b7c114fa47c2e2e67bfb7e4d82d831bc95c"
+      }
+    },
+    "link_prediction": {
+      "implementation_id": "link_prediction.41c8e8e2",
+      "sha256": {
+        "tool.py": "e0a980af605666e98c0974249823d9bd35aba2cc9edd294afebb4053558ec54d",
+        "tool.json": "b38cbc09d500f2f34e0b3f37320d4fab477270cb923931d283fbe3827e0923b2",
+        "README.md": "2fe6d85be650396edf2ee9c91fcee570c0c737b2af638bca96e7ba3b96698a08"
+      }
+    },
+    "louvain": {
+      "implementation_id": "louvain.f3b11984",
+      "sha256": {
+        "tool.py": "a72c5ab3be05b33136fcdb02c22c0a68f29f67fe94ec419f9be52862e5ac479b",
+        "tool.json": "3190adabe84518114c1f3436bc3aa711bb3ede90c12c7dfb6e9c63f84c6295bc",
+        "README.md": "c465cd7e0403d67f0f2bd1ffdf2f33edbf5bf27b10c642556b88ec65dcdbb59e"
+      }
+    },
+    "max_flow_min_cut": {
+      "implementation_id": "max_flow_min_cut.1e59ba80",
+      "sha256": {
+        "tool.py": "3ff90aea914ae422a8e0603f2ebf630e19beb09805ec5385c98e96ed4e80d451",
+        "tool.json": "bfbab3b5d155b56cd33e366b0dcd2acb49e1a947fc473e3328aa40762a686d44",
+        "README.md": "1220e4fa98daccbd7bb7a993da5b89ea5075bad1a4701fa4f43d541bd5f3f4db"
+      }
+    },
+    "maximal_cliques": {
+      "implementation_id": "maximal_cliques.62a230f4",
+      "sha256": {
+        "tool.py": "3899da3c035f890d069bb0b6bd8c9febeeb18e8989cd59c313d4a7d117777cb2",
+        "tool.json": "ce0ff26930726ff3d78d4319d293ba241f0d341f1aaf09e06f238b4db6e2e443",
+        "README.md": "01e9f9b5ebecb5bdec079147397ee9b809fbb1b4f78d73316069ef1e3c74a2f1"
+      }
+    },
+    "minimum_spanning_tree": {
+      "implementation_id": "minimum_spanning_tree.3ddaa37e",
+      "sha256": {
+        "tool.py": "44486acb920f118d1f4e686d4c0f136f50a85d7d672a7d40be8e504ebc74fe3d",
+        "tool.json": "d5bdcc25894c86606c15749361c8ab55f3499e88f7a22657ee8774609af5775f",
+        "README.md": "868c9efe844dcc9d35545e2498147e26a2bb5079c15971243ac26e90e757053a"
+      }
+    },
+    "motif_count": {
+      "implementation_id": "motif_count.63fb3e40",
+      "sha256": {
+        "tool.py": "a80eeef902b872d69b14a8c8eb9fe555169b39d1458d2d2ea02a2bbd4ca02261",
+        "tool.json": "0cf62f6fb88efbb564d2c613cdae4d13b7a14a8739714babde04465836b50522",
+        "README.md": "866dc9eb328cd255d290533c24114a9722c31b28d22942d8f6a038f0280999af"
+      }
+    },
+    "node_embedding_similarity": {
+      "implementation_id": "node_embedding_similarity.39bca602",
+      "sha256": {
+        "tool.py": "89ca908ccee2f26f6a6cbbf44158a3b97cd0619e58bcfb3495662d439230e80e",
+        "tool.json": "70e574b1865f7d5cdd9878672a2b3a98c858f42d9090857fbdde01d30cb2d19d",
+        "README.md": "6cf1aa3a13b53f6b438e0266dcd867dd4a637dd7640bbc4102589791b22917d0"
+      }
+    },
+    "node_similarity": {
+      "implementation_id": "node_similarity.29a7a55d",
+      "sha256": {
+        "tool.py": "a66889fb75544547d0fc7e24f5d8f3362aa695b8b0d896e49eb31cbc33d24e51",
+        "tool.json": "8d65c99024fc63af5f23e3158945bfe46585aaac299367e95eebde32280953e2",
+        "README.md": "52d35c36cc74632df814814bae13279e9774a2ff6de9be07da63cbfd59364da8"
+      }
+    },
+    "pagerank": {
+      "implementation_id": "pagerank.da50612d",
+      "sha256": {
+        "tool.py": "bfa5e4b6dc76356ee1b35f9dd3fcb3b303a1ae6398b74f842aade412ecae403c",
+        "tool.json": "6d3e69faf630101f7567c5c9171e3d89e20318457c0931d9a4619da516078712",
+        "README.md": "05920ae1a6a9f81ddfe07f020d1fd7da0e219bd35043e2605d2cac2e4630548a"
+      }
+    },
+    "personalized_pagerank": {
+      "implementation_id": "personalized_pagerank.e1e14ad1",
+      "sha256": {
+        "tool.py": "eda445298afc24b724d61e21275fac0f85edff9b44e95ba89f8f0c18fc58d462",
+        "tool.json": "4930707ecaff668e24f26a1d75f6eb327831780ef68af0d68762a45d2785737e",
+        "README.md": "1259c9bc9cdca3887f45621a6418664aebc2f020c2876383ccace6b121beb609"
+      }
+    },
+    "reachability": {
+      "implementation_id": "reachability.7780ae37",
+      "sha256": {
+        "tool.py": "457d1e216f881c4b5ae204886f21fb5625f13011208708cf48e765b9185e0347",
+        "tool.json": "0ab01e64b1f923de060b11477adc03f0270b62bffb27cf97091aebb407b40437",
+        "README.md": "1903e3a58562a7d7bf8a9479a15f9095544f0b8d3612fc93aed4ec466eee803d"
+      }
+    },
+    "shortest_path_unweighted": {
+      "implementation_id": "shortest_path_unweighted.8809b513",
+      "sha256": {
+        "tool.py": "b04aadf24a65b1b39600389d5e9f8e37f0fffa10f3f9a9a68eafbf060300c33a",
+        "tool.json": "7920e3a3dccf2644c3aabacdb26cb5cc0c2c5a0c1274ba119ae45d36f97b2ab1",
+        "README.md": "1d0eff54db64f539c1e164c52c813eb9d3bac26ee343f155819d0647e47a17d7"
+      }
+    },
+    "shortest_path_weighted": {
+      "implementation_id": "shortest_path_weighted.32016695",
+      "sha256": {
+        "tool.py": "e780eb4f06669a54d9728595872ee27c5578e3b77cdae7c5269458ec305bb732",
+        "tool.json": "e34a68e7f02166bbd9773ad70abb00d9f6e9c4dc9788426b0757e9c992ec39e0",
+        "README.md": "bb8873c004824e36d9d06e84359fe6c78806ca6b14ee9537cf24cb5f301e7c46"
+      }
+    },
+    "strongly_connected_components": {
+      "implementation_id": "strongly_connected_components.2f7893e5",
+      "sha256": {
+        "tool.py": "a635f8f120edced01bab2dddc06c46931ea05a7ef6cf341bbdb5fd7c8e4beb18",
+        "tool.json": "2f598f7078743d0482658307d3a0a5f57aaeef24c0c7a1b0cf15cf9b23e17218",
+        "README.md": "038492b83e507b07537b2e402018d9b548e633a910b62b3ff5aa2875735d5a7a"
+      }
+    },
+    "topological_sort": {
+      "implementation_id": "topological_sort.63fb3e40",
+      "sha256": {
+        "tool.py": "a71b8959912921b343e28547b9d66da1e74e66c22786dd867648cd39f147a959",
+        "tool.json": "032e01b1593760dd08d124975f90bc661ae7512f82ef5bf08dadf11767bf9ebc",
+        "README.md": "eb56e137a3fcffed7755ed6024be70928d195df9bb76c22c7714a652b4015d97"
+      }
+    }
+  },
+  "implementations": [
+    {
+      "implementation_id": "articulation_points_bridges.3237bc9e",
+      "source": "tools/articulation_points_bridges/3237bc9e/tool.json",
+      "name": "articulation_points_bridges",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "articulation_points_bridges.8f0a9ac4",
+      "source": "tools/articulation_points_bridges/8f0a9ac4/tool.json",
+      "name": "articulation_points_bridges",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: bridge_count/num_bridges"
+    },
+    {
+      "implementation_id": "articulation_points_bridges.f6f61ae0",
+      "source": "tools/articulation_points_bridges/f6f61ae0/tool.json",
+      "name": "articulation_points_bridges",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "betweenness_centrality.2f7893e5",
+      "source": "tools/betweenness_centrality/2f7893e5/tool.json",
+      "name": "betweenness_centrality",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "betweenness_centrality.7b0e9b7e",
+      "source": "tools/betweenness_centrality/7b0e9b7e/tool.json",
+      "name": "betweenness_centrality",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: score/closeness/centrality/pagerank"
+    },
+    {
+      "implementation_id": "betweenness_centrality.98eff80e",
+      "source": "tools/betweenness_centrality/98eff80e/tool.json",
+      "name": "betweenness_centrality",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "betweenness_centrality.c1fb2ea9",
+      "source": "tools/betweenness_centrality/c1fb2ea9/tool.json",
+      "name": "betweenness_centrality",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "betweenness_centrality.d69742a9",
+      "source": "tools/betweenness_centrality/d69742a9/tool.json",
+      "name": "betweenness_centrality",
+      "passed": false,
+      "reason": "AssertionError: Expected 0.0, got 0.333333"
+    },
+    {
+      "implementation_id": "betweenness_centrality.f6f61ae0",
+      "source": "tools/betweenness_centrality/f6f61ae0/tool.json",
+      "name": "betweenness_centrality",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "betweenness_centrality.f897d4c5",
+      "source": "tools/betweenness_centrality/f897d4c5/tool.json",
+      "name": "betweenness_centrality",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "betweenness_centrality.fcd76f91",
+      "source": "tools/betweenness_centrality/fcd76f91/tool.json",
+      "name": "betweenness_centrality",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "bipartite_check.3c8c3c69",
+      "source": "tools/bipartite_check/3c8c3c69/tool.json",
+      "name": "bipartite_check",
+      "checks": [
+        "bipartite: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "bipartite_check.62a230f4",
+      "source": "tools/bipartite_check/62a230f4/tool.json",
+      "name": "bipartite_check",
+      "checks": [
+        "bipartite: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "bipartite_check.6e31812a",
+      "source": "tools/bipartite_check/6e31812a/tool.json",
+      "name": "bipartite_check",
+      "checks": [
+        "bipartite: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "bipartite_check.7780ae37",
+      "source": "tools/bipartite_check/7780ae37/tool.json",
+      "name": "bipartite_check",
+      "checks": [
+        "bipartite: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "bipartite_matching.3f28ff34",
+      "source": "tools/bipartite_matching/3f28ff34/tool.json",
+      "name": "bipartite_matching",
+      "checks": [
+        "bipartite: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "bipartite_matching.54d073a3",
+      "source": "tools/bipartite_matching/54d073a3/tool.json",
+      "name": "bipartite_matching",
+      "checks": [
+        "bipartite: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "bipartite_matching.8809b513",
+      "source": "tools/bipartite_matching/8809b513/tool.json",
+      "name": "bipartite_matching",
+      "checks": [
+        "bipartite: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "bipartite_matching.8f0a9ac4",
+      "source": "tools/bipartite_matching/8f0a9ac4/tool.json",
+      "name": "bipartite_matching",
+      "checks": [
+        "bipartite: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "bipartite_matching.c52598eb",
+      "source": "tools/bipartite_matching/c52598eb/tool.json",
+      "name": "bipartite_matching",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: matching_size/size/num_matches"
+    },
+    {
+      "implementation_id": "bipartite_matching.d02c8330",
+      "source": "tools/bipartite_matching/d02c8330/tool.json",
+      "name": "bipartite_matching",
+      "checks": [
+        "bipartite: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "bipartite_matching.e2346c64",
+      "source": "tools/bipartite_matching/e2346c64/tool.json",
+      "name": "bipartite_matching",
+      "checks": [
+        "bipartite: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "bipartite_matching.f9857550",
+      "source": "tools/bipartite_matching/f9857550/tool.json",
+      "name": "bipartite_matching",
+      "checks": [
+        "bipartite: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "closeness_centrality.64036f4f",
+      "source": "tools/closeness_centrality/64036f4f/tool.json",
+      "name": "closeness_centrality",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "closeness_centrality.7065a2b5",
+      "source": "tools/closeness_centrality/7065a2b5/tool.json",
+      "name": "closeness_centrality",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "closeness_centrality.7b0e9b7e",
+      "source": "tools/closeness_centrality/7b0e9b7e/tool.json",
+      "name": "closeness_centrality",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "closeness_centrality.7cc0c2d7",
+      "source": "tools/closeness_centrality/7cc0c2d7/tool.json",
+      "name": "closeness_centrality",
+      "passed": false,
+      "reason": "AssertionError: Expected 0.6400000000000001, got 0.8"
+    },
+    {
+      "implementation_id": "closeness_centrality.afc500fb",
+      "source": "tools/closeness_centrality/afc500fb/tool.json",
+      "name": "closeness_centrality",
+      "passed": false,
+      "reason": "AssertionError: Incomplete ranking on small fixture"
+    },
+    {
+      "implementation_id": "clustering_coefficient.219c8a12",
+      "source": "tools/clustering_coefficient/219c8a12/tool.json",
+      "name": "clustering_coefficient",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: average_clustering"
+    },
+    {
+      "implementation_id": "clustering_coefficient.3ddaa37e",
+      "source": "tools/clustering_coefficient/3ddaa37e/tool.json",
+      "name": "clustering_coefficient",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "clustering_coefficient.6ae0e02c",
+      "source": "tools/clustering_coefficient/6ae0e02c/tool.json",
+      "name": "clustering_coefficient",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "clustering_coefficient.7065a2b5",
+      "source": "tools/clustering_coefficient/7065a2b5/tool.json",
+      "name": "clustering_coefficient",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: average_clustering"
+    },
+    {
+      "implementation_id": "clustering_coefficient.7b0e9b7e",
+      "source": "tools/clustering_coefficient/7b0e9b7e/tool.json",
+      "name": "clustering_coefficient",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "clustering_coefficient.d02c8330",
+      "source": "tools/clustering_coefficient/d02c8330/tool.json",
+      "name": "clustering_coefficient",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "clustering_coefficient.da50612d",
+      "source": "tools/clustering_coefficient/da50612d/tool.json",
+      "name": "clustering_coefficient",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "connected_components.1e59ba80",
+      "source": "tools/connected_components/1e59ba80/tool.json",
+      "name": "connected_components",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "connected_components.3237bc9e",
+      "source": "tools/connected_components/3237bc9e/tool.json",
+      "name": "connected_components",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: num_components/count"
+    },
+    {
+      "implementation_id": "connected_components.37c243f2",
+      "source": "tools/connected_components/37c243f2/tool.json",
+      "name": "connected_components",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: num_components/count"
+    },
+    {
+      "implementation_id": "connected_components.4ebce3f0",
+      "source": "tools/connected_components/4ebce3f0/tool.json",
+      "name": "connected_components",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "connected_components.991d1029",
+      "source": "tools/connected_components/991d1029/tool.json",
+      "name": "connected_components",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: num_components/count"
+    },
+    {
+      "implementation_id": "connected_components.e2346c64",
+      "source": "tools/connected_components/e2346c64/tool.json",
+      "name": "connected_components",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "connected_components.f9857550",
+      "source": "tools/connected_components/f9857550/tool.json",
+      "name": "connected_components",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: num_components/count"
+    },
+    {
+      "implementation_id": "degree_centrality.54d073a3",
+      "source": "tools/degree_centrality/54d073a3/tool.json",
+      "name": "degree_centrality",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "degree_centrality.62a230f4",
+      "source": "tools/degree_centrality/62a230f4/tool.json",
+      "name": "degree_centrality",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "degree_centrality.a018559c",
+      "source": "tools/degree_centrality/a018559c/tool.json",
+      "name": "degree_centrality",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: score/closeness/centrality/pagerank"
+    },
+    {
+      "implementation_id": "degree_centrality.c52598eb",
+      "source": "tools/degree_centrality/c52598eb/tool.json",
+      "name": "degree_centrality",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "degree_centrality.f897d4c5",
+      "source": "tools/degree_centrality/f897d4c5/tool.json",
+      "name": "degree_centrality",
+      "passed": false,
+      "reason": "AssertionError: Expected 1.0, got 0.6"
+    },
+    {
+      "implementation_id": "degree_distribution.63fb3e40",
+      "source": "tools/degree_distribution/63fb3e40/tool.json",
+      "name": "degree_distribution",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "degree_distribution.6e31812a",
+      "source": "tools/degree_distribution/6e31812a/tool.json",
+      "name": "degree_distribution",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "degree_distribution.c1fb2ea9",
+      "source": "tools/degree_distribution/c1fb2ea9/tool.json",
+      "name": "degree_distribution",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: mean_degree/average_degree/avg_degree"
+    },
+    {
+      "implementation_id": "degree_distribution.c4576e71",
+      "source": "tools/degree_distribution/c4576e71/tool.json",
+      "name": "degree_distribution",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "degree_distribution.c7c2ef65",
+      "source": "tools/degree_distribution/c7c2ef65/tool.json",
+      "name": "degree_distribution",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "degree_distribution.efd53284",
+      "source": "tools/degree_distribution/efd53284/tool.json",
+      "name": "degree_distribution",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: mean_degree/average_degree/avg_degree"
+    },
+    {
+      "implementation_id": "degree_distribution.f3b11984",
+      "source": "tools/degree_distribution/f3b11984/tool.json",
+      "name": "degree_distribution",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: mean_degree/average_degree/avg_degree"
+    },
+    {
+      "implementation_id": "diameter_eccentricity.991d1029",
+      "source": "tools/diameter_eccentricity/991d1029/tool.json",
+      "name": "diameter_eccentricity",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "diameter_eccentricity.ab9fb3a3",
+      "source": "tools/diameter_eccentricity/ab9fb3a3/tool.json",
+      "name": "diameter_eccentricity",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "diameter_eccentricity.ae9bcafc",
+      "source": "tools/diameter_eccentricity/ae9bcafc/tool.json",
+      "name": "diameter_eccentricity",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "diameter_eccentricity.d69742a9",
+      "source": "tools/diameter_eccentricity/d69742a9/tool.json",
+      "name": "diameter_eccentricity",
+      "passed": false,
+      "reason": "AssertionError: Expected 3, got 8.0"
+    },
+    {
+      "implementation_id": "ego_network.51616f3b",
+      "source": "tools/ego_network/51616f3b/tool.json",
+      "name": "ego_network",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "ego_network.98eff80e",
+      "source": "tools/ego_network/98eff80e/tool.json",
+      "name": "ego_network",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "ego_network.afc500fb",
+      "source": "tools/ego_network/afc500fb/tool.json",
+      "name": "ego_network",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "ego_network.b2d75536",
+      "source": "tools/ego_network/b2d75536/tool.json",
+      "name": "ego_network",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "ego_network.d35c782d",
+      "source": "tools/ego_network/d35c782d/tool.json",
+      "name": "ego_network",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "ego_network.e1e14ad1",
+      "source": "tools/ego_network/e1e14ad1/tool.json",
+      "name": "ego_network",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "girvan_newman.219c8a12",
+      "source": "tools/girvan_newman/219c8a12/tool.json",
+      "name": "girvan_newman",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "girvan_newman.3237bc9e",
+      "source": "tools/girvan_newman/3237bc9e/tool.json",
+      "name": "girvan_newman",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "girvan_newman.3c8c3c69",
+      "source": "tools/girvan_newman/3c8c3c69/tool.json",
+      "name": "girvan_newman",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "girvan_newman.64036f4f",
+      "source": "tools/girvan_newman/64036f4f/tool.json",
+      "name": "girvan_newman",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "girvan_newman.80ae2fd8",
+      "source": "tools/girvan_newman/80ae2fd8/tool.json",
+      "name": "girvan_newman",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "girvan_newman.afc500fb",
+      "source": "tools/girvan_newman/afc500fb/tool.json",
+      "name": "girvan_newman",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "girvan_newman.c7c2ef65",
+      "source": "tools/girvan_newman/c7c2ef65/tool.json",
+      "name": "girvan_newman",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "girvan_newman.d35c782d",
+      "source": "tools/girvan_newman/d35c782d/tool.json",
+      "name": "girvan_newman",
+      "passed": false,
+      "reason": "AssertionError: First split/largest community differs from NetworkX"
+    },
+    {
+      "implementation_id": "graph_summary.2f7893e5",
+      "source": "tools/graph_summary/2f7893e5/tool.json",
+      "name": "graph_summary",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "graph_summary.41c8e8e2",
+      "source": "tools/graph_summary/41c8e8e2/tool.json",
+      "name": "graph_summary",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "graph_summary.5c98c8eb",
+      "source": "tools/graph_summary/5c98c8eb/tool.json",
+      "name": "graph_summary",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: nodes/num_nodes/node_count"
+    },
+    {
+      "implementation_id": "graph_summary.64036f4f",
+      "source": "tools/graph_summary/64036f4f/tool.json",
+      "name": "graph_summary",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "graph_summary.80ae2fd8",
+      "source": "tools/graph_summary/80ae2fd8/tool.json",
+      "name": "graph_summary",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: nodes/num_nodes/node_count"
+    },
+    {
+      "implementation_id": "graph_summary.a20d8c29",
+      "source": "tools/graph_summary/a20d8c29/tool.json",
+      "name": "graph_summary",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "greedy_coloring.4ebce3f0",
+      "source": "tools/greedy_coloring/4ebce3f0/tool.json",
+      "name": "greedy_coloring",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "greedy_coloring.54d073a3",
+      "source": "tools/greedy_coloring/54d073a3/tool.json",
+      "name": "greedy_coloring",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: color_classes/groups"
+    },
+    {
+      "implementation_id": "greedy_coloring.8809b513",
+      "source": "tools/greedy_coloring/8809b513/tool.json",
+      "name": "greedy_coloring",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: color_classes/groups"
+    },
+    {
+      "implementation_id": "greedy_coloring.f28f69d7",
+      "source": "tools/greedy_coloring/f28f69d7/tool.json",
+      "name": "greedy_coloring",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: color_classes/groups"
+    },
+    {
+      "implementation_id": "hits.219c8a12",
+      "source": "tools/hits/219c8a12/tool.json",
+      "name": "hits",
+      "checks": [
+        "hits: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "hits.98eff80e",
+      "source": "tools/hits/98eff80e/tool.json",
+      "name": "hits",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: hubs"
+    },
+    {
+      "implementation_id": "hits.a20d8c29",
+      "source": "tools/hits/a20d8c29/tool.json",
+      "name": "hits",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: hubs"
+    },
+    {
+      "implementation_id": "hits.f9857550",
+      "source": "tools/hits/f9857550/tool.json",
+      "name": "hits",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: hubs"
+    },
+    {
+      "implementation_id": "k_core.3f28ff34",
+      "source": "tools/k_core/3f28ff34/tool.json",
+      "name": "k_core",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "k_core.51616f3b",
+      "source": "tools/k_core/51616f3b/tool.json",
+      "name": "k_core",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "k_core.b2d75536",
+      "source": "tools/k_core/b2d75536/tool.json",
+      "name": "k_core",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "k_core.d02c8330",
+      "source": "tools/k_core/d02c8330/tool.json",
+      "name": "k_core",
+      "passed": false,
+      "reason": "AssertionError: Expected 3, got 2"
+    },
+    {
+      "implementation_id": "k_hop_neighborhood.32016695",
+      "source": "tools/k_hop_neighborhood/32016695/tool.json",
+      "name": "k_hop_neighborhood",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "k_hop_neighborhood.3c8c3c69",
+      "source": "tools/k_hop_neighborhood/3c8c3c69/tool.json",
+      "name": "k_hop_neighborhood",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "k_hop_neighborhood.3f28ff34",
+      "source": "tools/k_hop_neighborhood/3f28ff34/tool.json",
+      "name": "k_hop_neighborhood",
+      "passed": false,
+      "reason": "AssertionError: Wrong k-hop subgraph"
+    },
+    {
+      "implementation_id": "k_hop_neighborhood.b2eb4e3d",
+      "source": "tools/k_hop_neighborhood/b2eb4e3d/tool.json",
+      "name": "k_hop_neighborhood",
+      "passed": false,
+      "reason": "AssertionError: Wrong k-hop subgraph"
+    },
+    {
+      "implementation_id": "k_hop_neighborhood.e7c02e9e",
+      "source": "tools/k_hop_neighborhood/e7c02e9e/tool.json",
+      "name": "k_hop_neighborhood",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "k_hop_neighborhood.f1f54c61",
+      "source": "tools/k_hop_neighborhood/f1f54c61/tool.json",
+      "name": "k_hop_neighborhood",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "label_propagation.39bca602",
+      "source": "tools/label_propagation/39bca602/tool.json",
+      "name": "label_propagation",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "label_propagation.6ae0e02c",
+      "source": "tools/label_propagation/6ae0e02c/tool.json",
+      "name": "label_propagation",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "label_propagation.a018559c",
+      "source": "tools/label_propagation/a018559c/tool.json",
+      "name": "label_propagation",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "label_propagation.f1f54c61",
+      "source": "tools/label_propagation/f1f54c61/tool.json",
+      "name": "label_propagation",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "link_prediction.37c243f2",
+      "source": "tools/link_prediction/37c243f2/tool.json",
+      "name": "link_prediction",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "link_prediction.41c8e8e2",
+      "source": "tools/link_prediction/41c8e8e2/tool.json",
+      "name": "link_prediction",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "link_prediction.92711a92",
+      "source": "tools/link_prediction/92711a92/tool.json",
+      "name": "link_prediction",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "link_prediction.d35c782d",
+      "source": "tools/link_prediction/d35c782d/tool.json",
+      "name": "link_prediction",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "link_prediction.eaf1d77a",
+      "source": "tools/link_prediction/eaf1d77a/tool.json",
+      "name": "link_prediction",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "louvain.91f2b762",
+      "source": "tools/louvain/91f2b762/tool.json",
+      "name": "louvain",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "louvain.b2d75536",
+      "source": "tools/louvain/b2d75536/tool.json",
+      "name": "louvain",
+      "passed": false,
+      "reason": "AssertionError: Expected 0.08000000000000004, got 0.052083"
+    },
+    {
+      "implementation_id": "louvain.c4576e71",
+      "source": "tools/louvain/c4576e71/tool.json",
+      "name": "louvain",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "louvain.e7c02e9e",
+      "source": "tools/louvain/e7c02e9e/tool.json",
+      "name": "louvain",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "louvain.f1f54c61",
+      "source": "tools/louvain/f1f54c61/tool.json",
+      "name": "louvain",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "louvain.f28f69d7",
+      "source": "tools/louvain/f28f69d7/tool.json",
+      "name": "louvain",
+      "passed": false,
+      "reason": "AssertionError: Expected 0.08000000000000004, got 0.052083"
+    },
+    {
+      "implementation_id": "louvain.f3b11984",
+      "source": "tools/louvain/f3b11984/tool.json",
+      "name": "louvain",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "max_flow_min_cut.1e59ba80",
+      "source": "tools/max_flow_min_cut/1e59ba80/tool.json",
+      "name": "max_flow_min_cut",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "max_flow_min_cut.29a7a55d",
+      "source": "tools/max_flow_min_cut/29a7a55d/tool.json",
+      "name": "max_flow_min_cut",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "max_flow_min_cut.32016695",
+      "source": "tools/max_flow_min_cut/32016695/tool.json",
+      "name": "max_flow_min_cut",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "max_flow_min_cut.3ddaa37e",
+      "source": "tools/max_flow_min_cut/3ddaa37e/tool.json",
+      "name": "max_flow_min_cut",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "max_flow_min_cut.5c98c8eb",
+      "source": "tools/max_flow_min_cut/5c98c8eb/tool.json",
+      "name": "max_flow_min_cut",
+      "passed": false,
+      "reason": "AssertionError: base: {'status': 'error', 'error': 'Maximum flow requires a directed graph.'}"
+    },
+    {
+      "implementation_id": "max_flow_min_cut.991d1029",
+      "source": "tools/max_flow_min_cut/991d1029/tool.json",
+      "name": "max_flow_min_cut",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "max_flow_min_cut.da50612d",
+      "source": "tools/max_flow_min_cut/da50612d/tool.json",
+      "name": "max_flow_min_cut",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "max_flow_min_cut.edba08e8",
+      "source": "tools/max_flow_min_cut/edba08e8/tool.json",
+      "name": "max_flow_min_cut",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "maximal_cliques.62a230f4",
+      "source": "tools/maximal_cliques/62a230f4/tool.json",
+      "name": "maximal_cliques",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "maximal_cliques.6ae0e02c",
+      "source": "tools/maximal_cliques/6ae0e02c/tool.json",
+      "name": "maximal_cliques",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: max_size/maximum_clique_size/largest_clique_size"
+    },
+    {
+      "implementation_id": "maximal_cliques.6e31812a",
+      "source": "tools/maximal_cliques/6e31812a/tool.json",
+      "name": "maximal_cliques",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: max_size/maximum_clique_size/largest_clique_size"
+    },
+    {
+      "implementation_id": "maximal_cliques.7065a2b5",
+      "source": "tools/maximal_cliques/7065a2b5/tool.json",
+      "name": "maximal_cliques",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: max_size/maximum_clique_size/largest_clique_size"
+    },
+    {
+      "implementation_id": "maximal_cliques.92711a92",
+      "source": "tools/maximal_cliques/92711a92/tool.json",
+      "name": "maximal_cliques",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: max_size/maximum_clique_size/largest_clique_size"
+    },
+    {
+      "implementation_id": "maximal_cliques.a018559c",
+      "source": "tools/maximal_cliques/a018559c/tool.json",
+      "name": "maximal_cliques",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: max_size/maximum_clique_size/largest_clique_size"
+    },
+    {
+      "implementation_id": "maximal_cliques.a20d8c29",
+      "source": "tools/maximal_cliques/a20d8c29/tool.json",
+      "name": "maximal_cliques",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: max_size/maximum_clique_size/largest_clique_size"
+    },
+    {
+      "implementation_id": "maximal_cliques.ab9fb3a3",
+      "source": "tools/maximal_cliques/ab9fb3a3/tool.json",
+      "name": "maximal_cliques",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: max_size/maximum_clique_size/largest_clique_size"
+    },
+    {
+      "implementation_id": "minimum_spanning_tree.3ddaa37e",
+      "source": "tools/minimum_spanning_tree/3ddaa37e/tool.json",
+      "name": "minimum_spanning_tree",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "minimum_spanning_tree.5c98c8eb",
+      "source": "tools/minimum_spanning_tree/5c98c8eb/tool.json",
+      "name": "minimum_spanning_tree",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "minimum_spanning_tree.96e40bd2",
+      "source": "tools/minimum_spanning_tree/96e40bd2/tool.json",
+      "name": "minimum_spanning_tree",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: total_weight/weight"
+    },
+    {
+      "implementation_id": "minimum_spanning_tree.b2eb4e3d",
+      "source": "tools/minimum_spanning_tree/b2eb4e3d/tool.json",
+      "name": "minimum_spanning_tree",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "minimum_spanning_tree.edba08e8",
+      "source": "tools/minimum_spanning_tree/edba08e8/tool.json",
+      "name": "minimum_spanning_tree",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "motif_count.37c243f2",
+      "source": "tools/motif_count/37c243f2/tool.json",
+      "name": "motif_count",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "motif_count.51616f3b",
+      "source": "tools/motif_count/51616f3b/tool.json",
+      "name": "motif_count",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "motif_count.63fb3e40",
+      "source": "tools/motif_count/63fb3e40/tool.json",
+      "name": "motif_count",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "motif_count.7cc0c2d7",
+      "source": "tools/motif_count/7cc0c2d7/tool.json",
+      "name": "motif_count",
+      "passed": false,
+      "reason": "AssertionError: Expected 45, got 52"
+    },
+    {
+      "implementation_id": "motif_count.81c01533",
+      "source": "tools/motif_count/81c01533/tool.json",
+      "name": "motif_count",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: count/triangles/triangle_count/total_triangles"
+    },
+    {
+      "implementation_id": "motif_count.ae9bcafc",
+      "source": "tools/motif_count/ae9bcafc/tool.json",
+      "name": "motif_count",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "motif_count.e1e14ad1",
+      "source": "tools/motif_count/e1e14ad1/tool.json",
+      "name": "motif_count",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "karate: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "motif_count.eaf1d77a",
+      "source": "tools/motif_count/eaf1d77a/tool.json",
+      "name": "motif_count",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: count/triangles/triangle_count/total_triangles"
+    },
+    {
+      "implementation_id": "node_embedding_similarity.39bca602",
+      "source": "tools/node_embedding_similarity/39bca602/tool.json",
+      "name": "node_embedding_similarity",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "node_embedding_similarity.41c8e8e2",
+      "source": "tools/node_embedding_similarity/41c8e8e2/tool.json",
+      "name": "node_embedding_similarity",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "node_embedding_similarity.4ebce3f0",
+      "source": "tools/node_embedding_similarity/4ebce3f0/tool.json",
+      "name": "node_embedding_similarity",
+      "passed": false,
+      "reason": "AssertionError: Output has no recognised ranking"
+    },
+    {
+      "implementation_id": "node_embedding_similarity.7780ae37",
+      "source": "tools/node_embedding_similarity/7780ae37/tool.json",
+      "name": "node_embedding_similarity",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "node_embedding_similarity.96e40bd2",
+      "source": "tools/node_embedding_similarity/96e40bd2/tool.json",
+      "name": "node_embedding_similarity",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "node_embedding_similarity.b2eb4e3d",
+      "source": "tools/node_embedding_similarity/b2eb4e3d/tool.json",
+      "name": "node_embedding_similarity",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "node_embedding_similarity.efd53284",
+      "source": "tools/node_embedding_similarity/efd53284/tool.json",
+      "name": "node_embedding_similarity",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "node_similarity.29a7a55d",
+      "source": "tools/node_similarity/29a7a55d/tool.json",
+      "name": "node_similarity",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "node_similarity.39bca602",
+      "source": "tools/node_similarity/39bca602/tool.json",
+      "name": "node_similarity",
+      "passed": false,
+      "reason": "KeyError: 'node_a'"
+    },
+    {
+      "implementation_id": "node_similarity.81c01533",
+      "source": "tools/node_similarity/81c01533/tool.json",
+      "name": "node_similarity",
+      "passed": false,
+      "reason": "AssertionError: base: {'status': 'error', 'error': 'Both node1 and node2 are required. Use lookup_node to find node ids.'}"
+    },
+    {
+      "implementation_id": "node_similarity.ab9fb3a3",
+      "source": "tools/node_similarity/ab9fb3a3/tool.json",
+      "name": "node_similarity",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: jaccard/jaccard_similarity"
+    },
+    {
+      "implementation_id": "node_similarity.d69742a9",
+      "source": "tools/node_similarity/d69742a9/tool.json",
+      "name": "node_similarity",
+      "passed": false,
+      "reason": "AssertionError: base: {'status': 'error', 'error': 'Unknown other: None. Use lookup_node.'}"
+    },
+    {
+      "implementation_id": "node_similarity.eaf1d77a",
+      "source": "tools/node_similarity/eaf1d77a/tool.json",
+      "name": "node_similarity",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "pagerank.29a7a55d",
+      "source": "tools/pagerank/29a7a55d/tool.json",
+      "name": "pagerank",
+      "passed": false,
+      "reason": "AssertionError: Expected 0.29042553191448683, got 0.355499"
+    },
+    {
+      "implementation_id": "pagerank.da50612d",
+      "source": "tools/pagerank/da50612d/tool.json",
+      "name": "pagerank",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "pagerank.f3b11984",
+      "source": "tools/pagerank/f3b11984/tool.json",
+      "name": "pagerank",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "personalized_pagerank.81c01533",
+      "source": "tools/personalized_pagerank/81c01533/tool.json",
+      "name": "personalized_pagerank",
+      "passed": false,
+      "reason": "AssertionError: Expected 0.33242767488203323, got 0.3777"
+    },
+    {
+      "implementation_id": "personalized_pagerank.c52598eb",
+      "source": "tools/personalized_pagerank/c52598eb/tool.json",
+      "name": "personalized_pagerank",
+      "passed": false,
+      "reason": "AssertionError: Expected 0.33242767488203323, got 0.377694"
+    },
+    {
+      "implementation_id": "personalized_pagerank.e1e14ad1",
+      "source": "tools/personalized_pagerank/e1e14ad1/tool.json",
+      "name": "personalized_pagerank",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "personalized_pagerank.e7c02e9e",
+      "source": "tools/personalized_pagerank/e7c02e9e/tool.json",
+      "name": "personalized_pagerank",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "disconnected: oracle/invariants, output bound, determinism",
+        "directed: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "reachability.7780ae37",
+      "source": "tools/reachability/7780ae37/tool.json",
+      "name": "reachability",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "reachability.7cc0c2d7",
+      "source": "tools/reachability/7cc0c2d7/tool.json",
+      "name": "reachability",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: path"
+    },
+    {
+      "implementation_id": "reachability.91f2b762",
+      "source": "tools/reachability/91f2b762/tool.json",
+      "name": "reachability",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: path"
+    },
+    {
+      "implementation_id": "reachability.92711a92",
+      "source": "tools/reachability/92711a92/tool.json",
+      "name": "reachability",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "reachability.f6f61ae0",
+      "source": "tools/reachability/f6f61ae0/tool.json",
+      "name": "reachability",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: path"
+    },
+    {
+      "implementation_id": "reachability.fcd76f91",
+      "source": "tools/reachability/fcd76f91/tool.json",
+      "name": "reachability",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "shortest_path_unweighted.8809b513",
+      "source": "tools/shortest_path_unweighted/8809b513/tool.json",
+      "name": "shortest_path_unweighted",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "shortest_path_unweighted.8f0a9ac4",
+      "source": "tools/shortest_path_unweighted/8f0a9ac4/tool.json",
+      "name": "shortest_path_unweighted",
+      "passed": false,
+      "reason": "AssertionError: base: {'status': 'error', 'error': 'Missing required parameter: src.'}"
+    },
+    {
+      "implementation_id": "shortest_path_unweighted.96e40bd2",
+      "source": "tools/shortest_path_unweighted/96e40bd2/tool.json",
+      "name": "shortest_path_unweighted",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: path"
+    },
+    {
+      "implementation_id": "shortest_path_unweighted.ae9bcafc",
+      "source": "tools/shortest_path_unweighted/ae9bcafc/tool.json",
+      "name": "shortest_path_unweighted",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "shortest_path_unweighted.edba08e8",
+      "source": "tools/shortest_path_unweighted/edba08e8/tool.json",
+      "name": "shortest_path_unweighted",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "shortest_path_unweighted.f28f69d7",
+      "source": "tools/shortest_path_unweighted/f28f69d7/tool.json",
+      "name": "shortest_path_unweighted",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "shortest_path_weighted.32016695",
+      "source": "tools/shortest_path_weighted/32016695/tool.json",
+      "name": "shortest_path_weighted",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "shortest_path_weighted.91f2b762",
+      "source": "tools/shortest_path_weighted/91f2b762/tool.json",
+      "name": "shortest_path_weighted",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "shortest_path_weighted.c4576e71",
+      "source": "tools/shortest_path_weighted/c4576e71/tool.json",
+      "name": "shortest_path_weighted",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "shortest_path_weighted.f897d4c5",
+      "source": "tools/shortest_path_weighted/f897d4c5/tool.json",
+      "name": "shortest_path_weighted",
+      "checks": [
+        "base: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "strongly_connected_components.2f7893e5",
+      "source": "tools/strongly_connected_components/2f7893e5/tool.json",
+      "name": "strongly_connected_components",
+      "checks": [
+        "directed: oracle/invariants, output bound, determinism",
+        "dag: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "strongly_connected_components.80ae2fd8",
+      "source": "tools/strongly_connected_components/80ae2fd8/tool.json",
+      "name": "strongly_connected_components",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: num_components/count"
+    },
+    {
+      "implementation_id": "strongly_connected_components.e2346c64",
+      "source": "tools/strongly_connected_components/e2346c64/tool.json",
+      "name": "strongly_connected_components",
+      "checks": [
+        "directed: oracle/invariants, output bound, determinism",
+        "dag: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "strongly_connected_components.fcd76f91",
+      "source": "tools/strongly_connected_components/fcd76f91/tool.json",
+      "name": "strongly_connected_components",
+      "checks": [
+        "directed: oracle/invariants, output bound, determinism",
+        "dag: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "topological_sort.1e59ba80",
+      "source": "tools/topological_sort/1e59ba80/tool.json",
+      "name": "topological_sort",
+      "checks": [
+        "dag: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "topological_sort.63fb3e40",
+      "source": "tools/topological_sort/63fb3e40/tool.json",
+      "name": "topological_sort",
+      "checks": [
+        "dag: oracle/invariants, output bound, determinism",
+        "unknown graph rejected"
+      ],
+      "passed": true
+    },
+    {
+      "implementation_id": "topological_sort.c1fb2ea9",
+      "source": "tools/topological_sort/c1fb2ea9/tool.json",
+      "name": "topological_sort",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: order/ordering/topological_order"
+    },
+    {
+      "implementation_id": "topological_sort.c7c2ef65",
+      "source": "tools/topological_sort/c7c2ef65/tool.json",
+      "name": "topological_sort",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: order/ordering/topological_order"
+    },
+    {
+      "implementation_id": "topological_sort.efd53284",
+      "source": "tools/topological_sort/efd53284/tool.json",
+      "name": "topological_sort",
+      "passed": false,
+      "reason": "AssertionError: Output missing structured field: order/ordering/topological_order"
+    }
+  ]
+}

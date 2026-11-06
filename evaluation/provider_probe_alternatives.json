@@ -1,0 +1,12 @@
+[
+  {
+    "model": "gemini-3.5-flash-lite",
+    "http_status": 200,
+    "response_excerpt": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"OK.\",\"extra_content\":{\"google\":{\"thought_signature\":\"EmAKXgFpFH0TXf78Sx916QUIQzvX+NUNtNH6qtxSkriiRWZptDSBHgkkbwg42Jv7SKhrFCOc1QZ++ltWKJxKBhg9++eSV1dqGdrqHEcEppNMrxSIjwnqmtPnITnFF26RU8s=\"}},\"role\":\"assistant\"}}],\"created\":1793857926,\"id\":\"hRnsatz5KrLF694P3sDWWQ\",\"model\":\"gemini-3.5-flash-lite\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":2,\"prompt_tokens\":4,\"total_tokens\":6}}"
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "http_status": 200,
+    "response_excerpt": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"OK.\",\"extra_content\":{\"google\":{\"thought_signature\":\"EnMKcQFpFH0TdcMIjr1ETs8RNviBmA8xZ47sCiWIdjb1B3M4l4kQawBs0q2rcPdkwqP1CxO0GFo+KczFNK8lMbbEwSH3CEXjrDTwo44S66J90ktsjZtjsRxAb9ClispWJBM1LCSr5i/QcCtZdmw/H52qCpRY\"}},\"role\":\"assistant\"}}],\"created\":1793857926,\"id\":\"hRnsau-QO7ze694Psa-viQI\",\"model\":\"gemini-3.1-flash-lite\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":2,\"prompt_tokens\":4,\"total_tokens\":6}}"
+  }
+]

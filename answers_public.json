@@ -1,0 +1,472 @@
+[
+  {
+    "query_id": "q01",
+    "status": "answered",
+    "answer_text": "Answer: 20058. Evidence: Graph 'airports' (directed, weighted) has 500 nodes and 20058 edges; density is 0.080393 and the average degree is 80.232. On average a node has 40.116 outgoing edges and the same number of incoming edges.",
+    "answer": {
+      "type": "number",
+      "value": 20058
+    },
+    "tools_used": [
+      "graph_summary.2f7893e5"
+    ],
+    "trace_file": "traces/q01.jsonl"
+  },
+  {
+    "query_id": "q02",
+    "status": "answered",
+    "answer_text": "Answer: \"FRA\". Evidence: Frankfurt am Main Airport (FRA) has the highest degree centrality (0.847695, raw count 423) among 500 nodes.",
+    "answer": {
+      "type": "node",
+      "value": "FRA"
+    },
+    "tools_used": [
+      "degree_centrality.54d073a3"
+    ],
+    "trace_file": "traces/q02.jsonl"
+  },
+  {
+    "query_id": "q03",
+    "status": "answered",
+    "answer_text": "Answer: 2. Evidence: The fewest-hop path from Chennai International Airport (MAA) to Humberto Delgado Airport (Lisbon Portela Airport) (LIS) uses 2 hops.",
+    "answer": {
+      "type": "number",
+      "value": 2
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.lookup_node",
+      "shortest_path_unweighted.8809b513"
+    ],
+    "trace_file": "traces/q03.jsonl"
+  },
+  {
+    "query_id": "q04",
+    "status": "answered",
+    "answer_text": "Answer: [\"MAA\", \"DEL\", \"JFK\"]. Evidence: The shortest path from Chennai International Airport (MAA) to John F Kennedy International Airport (JFK) has total weight 13,515 over 2 edge(s): MAA -> DEL -> JFK.",
+    "answer": {
+      "type": "path",
+      "value": [
+        "MAA",
+        "DEL",
+        "JFK"
+      ]
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.lookup_node",
+      "builtin.lookup_node",
+      "shortest_path_weighted.32016695"
+    ],
+    "trace_file": "traces/q04.jsonl"
+  },
+  {
+    "query_id": "q05",
+    "status": "answered",
+    "answer_text": "Answer: [\"FRA\", \"CDG\", \"AMS\", \"LHR\", \"IST\"]. Evidence: Frankfurt am Main Airport (FRA) has the highest PageRank (0.009152) of 500 nodes in 'airports' (damping 0.85, with every link counted equally, converged in 13 iterations). Showing the top 5.",
+    "answer": {
+      "type": "node_list",
+      "value": [
+        "FRA",
+        "CDG",
+        "AMS",
+        "LHR",
+        "IST"
+      ]
+    },
+    "tools_used": [
+      "pagerank.da50612d"
+    ],
+    "trace_file": "traces/q05.jsonl"
+  },
+  {
+    "query_id": "q06",
+    "status": "answered",
+    "answer_text": "Answer: [\"DXB\", \"DOH\", \"FRA\", \"KUL\", \"SIN\"]. Evidence: Most relevant to Chennai International Airport (MAA): Dubai International Airport (DXB, 0.014518), Hamad International Airport (DOH, 0.013627), Frankfurt am Main Airport (FRA, 0.013128) (damping 0.85, source excluded). 499 nodes receive a score. Showing the top 5.",
+    "answer": {
+      "type": "node_list",
+      "value": [
+        "DXB",
+        "DOH",
+        "FRA",
+        "KUL",
+        "SIN"
+      ]
+    },
+    "tools_used": [
+      "builtin.lookup_node",
+      "personalized_pagerank.e1e14ad1"
+    ],
+    "trace_file": "traces/q06.jsonl"
+  },
+  {
+    "query_id": "q07",
+    "status": "answered",
+    "answer_text": "Answer: true. Evidence: 'airports' is strongly connected: every one of its 500 nodes can reach every other. The component is registered as 'airports__ecac15e637c530a4'.",
+    "answer": {
+      "type": "boolean",
+      "value": true
+    },
+    "tools_used": [
+      "graph_summary.2f7893e5",
+      "strongly_connected_components.2f7893e5"
+    ],
+    "trace_file": "traces/q07.jsonl"
+  },
+  {
+    "query_id": "q08",
+    "status": "answered",
+    "answer_text": "Answer: [\"m1\", \"m34\", \"m33\"]. Evidence: Member 1 (instructor) (m1) lies on the most shortest paths in 'karate', with normalised betweenness on hop-count shortest paths of 0.437635; the top 3 of 34 nodes are listed.",
+    "answer": {
+      "type": "node_list",
+      "value": [
+        "m1",
+        "m34",
+        "m33"
+      ]
+    },
+    "tools_used": [
+      "betweenness_centrality.2f7893e5"
+    ],
+    "trace_file": "traces/q08.jsonl"
+  },
+  {
+    "query_id": "q09",
+    "status": "answered",
+    "answer_text": "Answer: [\"m1\"]. Evidence: 'karate' has 1 articulation point and 1 bridge. Articulation points include Member 1 (instructor) (m1).",
+    "answer": {
+      "type": "node_list",
+      "value": [
+        "m1"
+      ]
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "articulation_points_bridges.3237bc9e"
+    ],
+    "trace_file": "traces/q09.jsonl"
+  },
+  {
+    "query_id": "q10",
+    "status": "answered",
+    "answer_text": "Answer: 5. Evidence: The largest clique in 'karate' has 5 nodes (Member 1 (instructor), Member 14, Member 2, Member 3, Member 4). 36 maximal clique(s) found; returning 10.",
+    "answer": {
+      "type": "number",
+      "value": 5
+    },
+    "tools_used": [
+      "maximal_cliques.62a230f4"
+    ],
+    "trace_file": "traces/q10.jsonl"
+  },
+  {
+    "query_id": "q11",
+    "status": "answered",
+    "answer_text": "Answer: 10.0. Evidence: Maximum flow from Member 1 (instructor) (m1) to Member 34 (administrator) (m34) is 10.0 using capacity 'unit'. The minimum cut (the bottleneck) has 10 edge(s) with total capacity 10.0, splitting the graph into a source side of 17 node(s) and a sink side of 17 node(s); largest cut edges: m1 -- m32 (1.0); m1 -- m9 (1.0); m10 -- m34 (1.0); m14 -- m34 (1.0); m2 -- m31 (1.0).",
+    "answer": {
+      "type": "number",
+      "value": 10.0
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.project_graph",
+      "builtin.inspect_graph",
+      "builtin.filter_nodes",
+      "builtin.filter_nodes",
+      "builtin.lookup_node",
+      "max_flow_min_cut.1e59ba80"
+    ],
+    "trace_file": "traces/q11.jsonl"
+  },
+  {
+    "query_id": "q12",
+    "status": "answered",
+    "answer_text": "Answer: 0.432432. Evidence: Valjean and Javert share 16 neighbour(s) (Jaccard 0.432432 over a union of 37 nodes).",
+    "answer": {
+      "type": "number",
+      "value": 0.432432
+    },
+    "tools_used": [
+      "builtin.lookup_node",
+      "node_similarity.29a7a55d"
+    ],
+    "trace_file": "traces/q12.jsonl"
+  },
+  {
+    "query_id": "q13",
+    "status": "answered",
+    "answer_text": "Answer: [\"CS101\", \"MA101\", \"MA102\", \"CS102\", \"CS202\", \"CS203\", \"MA201\", \"MA202\", \"CS201\", \"CS301\", \"CS302\", \"CS303\", \"CS304\", \"CS305\", \"CS306\", \"CS307\", \"CS401\", \"CS402\", \"CS403\", \"CS404\", \"CS405\"]. Evidence: 'courses' can be ordered in 5 stage(s) covering 21 node(s); stage 1 (no prerequisites) is Programming Basics, Calculus, Discrete Mathematics.",
+    "answer": {
+      "type": "node_list",
+      "value": [
+        "CS101",
+        "MA101",
+        "MA102",
+        "CS102",
+        "CS202",
+        "CS203",
+        "MA201",
+        "MA202",
+        "CS201",
+        "CS301",
+        "CS302",
+        "CS303",
+        "CS304",
+        "CS305",
+        "CS306",
+        "CS307",
+        "CS401",
+        "CS402",
+        "CS403",
+        "CS404",
+        "CS405"
+      ]
+    },
+    "tools_used": [
+      "topological_sort.63fb3e40"
+    ],
+    "trace_file": "traces/q13.jsonl"
+  },
+  {
+    "query_id": "q14",
+    "status": "answered",
+    "answer_text": "Answer: 9. Evidence: A maximum matching has 9 pairs between the 10 'project' nodes and the 16 'student' nodes; 1 'project' and 7 'student' nodes stay unmatched.",
+    "answer": {
+      "type": "number",
+      "value": 9
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "bipartite_matching.3f28ff34"
+    ],
+    "trace_file": "traces/q14.jsonl"
+  },
+  {
+    "query_id": "q15",
+    "status": "answered",
+    "answer_text": "Answer: \"MUC\". routes_to_german_airports: 12. Evidence: Munich Airport (MUC) has the highest out-degree centrality (0.705882, raw count 12) among 18 nodes.",
+    "answer": {
+      "type": "node",
+      "value": "MUC"
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.inspect_graph",
+      "builtin.filter_nodes",
+      "degree_centrality.54d073a3"
+    ],
+    "trace_file": "traces/q15.jsonl"
+  },
+  {
+    "query_id": "q16",
+    "status": "answered",
+    "answer_text": "Answer: 4122.0. Evidence: The minimum spanning tree connects 8 nodes with 7 edges and total weight 4122.000000. The registered graph contains the full tree.",
+    "answer": {
+      "type": "number",
+      "value": 4122.0
+    },
+    "tools_used": [
+      "builtin.inspect_graph",
+      "builtin.filter_nodes",
+      "connected_components.4ebce3f0",
+      "minimum_spanning_tree.3ddaa37e"
+    ],
+    "trace_file": "traces/q16.jsonl"
+  },
+  {
+    "query_id": "q17",
+    "status": "answered",
+    "answer_text": "Answer: \"m2\". connections: 8. Evidence: Member 1 (instructor) (m1) has the highest degree centrality (1.0, raw count 16) among 17 nodes.",
+    "answer": {
+      "type": "node",
+      "value": "m2"
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.inspect_graph",
+      "builtin.lookup_node",
+      "ego_network.51616f3b",
+      "degree_centrality.54d073a3"
+    ],
+    "trace_file": "traces/q17.jsonl"
+  },
+  {
+    "query_id": "q18",
+    "status": "answered",
+    "answer_text": "Answer: \"ORD\". Evidence: Chicago O'Hare International Airport (ORD) lies on the most shortest paths in 'airports__5e93eb407baf66f7', with normalised betweenness on hop-count shortest paths of 0.040203; the top 5 of 74 nodes are listed.",
+    "answer": {
+      "type": "node",
+      "value": "ORD"
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.inspect_graph",
+      "builtin.filter_nodes",
+      "betweenness_centrality.2f7893e5"
+    ],
+    "trace_file": "traces/q18.jsonl"
+  },
+  {
+    "query_id": "q19",
+    "status": "answered",
+    "answer_text": "Answer: \"m34\". Evidence: Member 34 (administrator) (m34) has the highest PageRank (0.174978) of 19 nodes in 'karate__4ca480f0b747aba1' (damping 0.85, with every link counted equally, converged in 23 iterations). Showing the top 1.",
+    "answer": {
+      "type": "node",
+      "value": "m34"
+    },
+    "tools_used": [
+      "girvan_newman.219c8a12",
+      "pagerank.da50612d"
+    ],
+    "trace_file": "traces/q19.jsonl"
+  },
+  {
+    "query_id": "q20",
+    "status": "answered",
+    "answer_text": "Answer: 0.645714. Evidence: The average clustering coefficient of 'karate__a5e43e622e52034a' is 0.645714 over 10 nodes; the highest is Member 8 (m8) with 1.0. Showing the top 10 nodes.",
+    "answer": {
+      "type": "number",
+      "value": 0.645714
+    },
+    "tools_used": [
+      "k_core.3f28ff34",
+      "clustering_coefficient.da50612d"
+    ],
+    "trace_file": "traces/q20.jsonl"
+  },
+  {
+    "query_id": "q21",
+    "status": "answered",
+    "answer_text": "Answer: \"c40\". betweenness_score: 0.062634. Evidence: Valjean (c74) lies on the most shortest paths in 'lesmis__5896de315ada85db', with normalised betweenness on hop-count shortest paths of 0.755015; the top 10 of 37 nodes are listed.",
+    "answer": {
+      "type": "node",
+      "value": "c40"
+    },
+    "tools_used": [
+      "builtin.lookup_node",
+      "ego_network.51616f3b",
+      "betweenness_centrality.2f7893e5"
+    ],
+    "trace_file": "traces/q21.jsonl"
+  },
+  {
+    "query_id": "q22",
+    "status": "answered",
+    "answer_text": "Answer: 96. Evidence: 'lesmis__2f3ef0627d649448' has 96 triangles: 29.2% of its 329 connected triads and 1.9 times the number expected in a random graph with the same number of links. The nodes in the most are Javert (44), Valjean (44) and Thenardier (31).",
+    "answer": {
+      "type": "number",
+      "value": 96
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.lookup_node",
+      "ego_network.51616f3b",
+      "motif_count.63fb3e40"
+    ],
+    "trace_file": "traces/q22.jsonl"
+  },
+  {
+    "query_id": "q23",
+    "status": "answered",
+    "answer_text": "Answer: \"DEL\". difference: 0.016621000000000052. Evidence: Resolve each name only when it has one match; multiple matches need clarification. Indira Gandhi International Airport (DEL) has closeness 0.509704, on average 1.962 hops from the nodes that can reach it (499 of 499 other nodes); it ranks 47 of 500 in 'airports'. Direction: incoming. Chhatrapati Shivaji International Airport (BOM) has closeness 0.493083, on average 2.028 hops from the nodes that can reach it (499 of 499 other nodes); it ranks 65 of 500 in 'airports'. Direction: incoming.",
+    "answer": {
+      "type": "node",
+      "value": "DEL"
+    },
+    "tools_used": [
+      "builtin.lookup_node",
+      "closeness_centrality.7065a2b5",
+      "closeness_centrality.7065a2b5"
+    ],
+    "trace_file": "traces/q23.jsonl"
+  },
+  {
+    "query_id": "q24",
+    "status": "clarification_needed",
+    "answer_text": "Which graph should I analyse?",
+    "answer": {
+      "type": "text",
+      "value": "Please specify the graph."
+    },
+    "tools_used": [],
+    "trace_file": "traces/q24.jsonl"
+  },
+  {
+    "query_id": "q25",
+    "status": "clarification_needed",
+    "answer_text": "Paris and Tokyo have multiple airports (CDG, ORY, BVA for Paris; NRT, HND for Tokyo), making the shortest route ambiguous. Please specify which airports in Paris and Tokyo you want the route between.",
+    "answer": {
+      "type": "text",
+      "value": "Paris and Tokyo have multiple airports (CDG, ORY, BVA for Paris; NRT, HND for Tokyo), making the shortest route ambiguous. Please specify which airports in Paris and Tokyo you want the route between."
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.lookup_node"
+    ],
+    "trace_file": "traces/q25.jsonl"
+  },
+  {
+    "query_id": "q26",
+    "status": "clarification_needed",
+    "answer_text": "Which measure of closeness do you mean: the number of hops, weighted distance or interaction strength, or similarity of connections?",
+    "answer": {
+      "type": "text",
+      "value": "Which measure of closeness do you mean: the number of hops, weighted distance or interaction strength, or similarity of connections?"
+    },
+    "tools_used": [],
+    "trace_file": "traces/q26.jsonl"
+  },
+  {
+    "query_id": "q27",
+    "status": "unsupported",
+    "answer_text": "Fare or price information is not available in the airports graph data.",
+    "answer": {
+      "type": "text",
+      "value": "Fare or price information is not available in the airports graph data."
+    },
+    "tools_used": [
+      "builtin.inspect_graph"
+    ],
+    "trace_file": "traces/q27.jsonl"
+  },
+  {
+    "query_id": "q28",
+    "status": "unsupported",
+    "answer_text": "Unsupported: inspect_graph confirms that airline names/details are not present in the graph attributes (only edge attributes 'airlines' as count/number, and great-circle distance 'weight'), so individual airline identities (such as which specific airline flies which routes) cannot be determined from the dataset.",
+    "answer": {
+      "type": "text",
+      "value": "Unsupported: inspect_graph confirms that airline names/details are not present in the graph attributes (only edge attributes 'airlines' as count/number, and great-circle distance 'weight'), so individual airline identities (such as which specific airline flies which routes) cannot be determined from the dataset."
+    },
+    "tools_used": [
+      "builtin.inspect_graph"
+    ],
+    "trace_file": "traces/q28.jsonl"
+  },
+  {
+    "query_id": "q29",
+    "status": "unsupported",
+    "answer_text": "The request asks for specific flight schedules ('next Tuesday') which are unavailable in the graph dataset (OpenFlights static route network). According to instructions, unsupported attributes or missing data (like schedules and flight times) make this query unsupported.",
+    "answer": {
+      "type": "text",
+      "value": "The request asks for specific flight schedules ('next Tuesday') which are unavailable in the graph dataset (OpenFlights static route network). According to instructions, unsupported attributes or missing data (like schedules and flight times) make this query unsupported."
+    },
+    "tools_used": [
+      "builtin.inspect_graph"
+    ],
+    "trace_file": "traces/q29.jsonl"
+  },
+  {
+    "query_id": "q30",
+    "status": "unsupported",
+    "answer_text": "An algorithm or tool to check planarity is absent from the provided tool menu, so planarity of the network is unsupported.",
+    "answer": {
+      "type": "text",
+      "value": "An algorithm or tool to check planarity is absent from the provided tool menu, so planarity of the network is unsupported."
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "graph_summary.2f7893e5"
+    ],
+    "trace_file": "traces/q30.jsonl"
+  }
+]

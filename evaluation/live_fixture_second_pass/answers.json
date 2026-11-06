@@ -1,0 +1,190 @@
+[
+  {
+    "query_id": "q08",
+    "status": "answered",
+    "answer_text": "Answer: [\"m1\", \"m34\", \"m33\"]. Evidence: Member 1 (instructor) (m1) lies on the most shortest paths in 'karate', with normalised betweenness on hop-count shortest paths of 0.437635; the top 3 of 34 nodes are listed.",
+    "answer": {
+      "type": "node_list",
+      "value": [
+        "m1",
+        "m34",
+        "m33"
+      ]
+    },
+    "tools_used": [
+      "betweenness_centrality.2f7893e5"
+    ],
+    "trace_file": "traces/q08.jsonl"
+  },
+  {
+    "query_id": "q09",
+    "status": "answered",
+    "answer_text": "Answer: [\"m1\"]. Evidence: 'karate' has 1 articulation point and 1 bridge. Articulation points include Member 1 (instructor) (m1).",
+    "answer": {
+      "type": "node_list",
+      "value": [
+        "m1"
+      ]
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "articulation_points_bridges.3237bc9e"
+    ],
+    "trace_file": "traces/q09.jsonl"
+  },
+  {
+    "query_id": "q10",
+    "status": "answered",
+    "answer_text": "Answer: 5. Evidence: The largest clique in 'karate' has 5 nodes (Member 1 (instructor), Member 14, Member 2, Member 3, Member 4). 36 maximal clique(s) found; returning 10.",
+    "answer": {
+      "type": "number",
+      "value": 5
+    },
+    "tools_used": [
+      "maximal_cliques.62a230f4"
+    ],
+    "trace_file": "traces/q10.jsonl"
+  },
+  {
+    "query_id": "q11",
+    "status": "answered",
+    "answer_text": "Answer: 10.0. Evidence: Maximum flow from Member 1 (instructor) (m1) to Member 34 (administrator) (m34) is 10.0 using capacity 'unit'. The minimum cut (the bottleneck) has 10 edge(s) with total capacity 10.0, splitting the graph into a source side of 17 node(s) and a sink side of 17 node(s); largest cut edges: m1 -- m32 (1.0); m1 -- m9 (1.0); m10 -- m34 (1.0); m14 -- m34 (1.0); m2 -- m31 (1.0).",
+    "answer": {
+      "type": "number",
+      "value": 10.0
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.project_graph",
+      "builtin.lookup_node",
+      "builtin.lookup_node",
+      "max_flow_min_cut.1e59ba80"
+    ],
+    "trace_file": "traces/q11.jsonl"
+  },
+  {
+    "query_id": "q12",
+    "status": "answered",
+    "answer_text": "Answer: 0.432432. Evidence: Valjean and Javert share 16 neighbour(s) (Jaccard 0.432432 over a union of 37 nodes).",
+    "answer": {
+      "type": "number",
+      "value": 0.432432
+    },
+    "tools_used": [
+      "builtin.lookup_node",
+      "node_similarity.29a7a55d"
+    ],
+    "trace_file": "traces/q12.jsonl"
+  },
+  {
+    "query_id": "q17",
+    "status": "answered",
+    "answer_text": "Answer: \"m2\". connections: 8. Evidence: Member 1 (instructor) (m1) has the highest degree centrality (1.0, raw count 16) among 17 nodes.",
+    "answer": {
+      "type": "node",
+      "value": "m2"
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.lookup_node",
+      "ego_network.51616f3b",
+      "degree_centrality.54d073a3"
+    ],
+    "trace_file": "traces/q17.jsonl"
+  },
+  {
+    "query_id": "q19",
+    "status": "answered",
+    "answer_text": "Answer: \"m34\". Evidence: Member 34 (administrator) (m34) has the highest PageRank (0.174978) of 19 nodes in 'karate__3912cf3680c4bf6f' (damping 0.85, with every link counted equally, converged in 23 iterations). Showing the top 1.",
+    "answer": {
+      "type": "node",
+      "value": "m34"
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "girvan_newman.219c8a12",
+      "pagerank.da50612d"
+    ],
+    "trace_file": "traces/q19.jsonl"
+  },
+  {
+    "query_id": "q20",
+    "status": "answered",
+    "answer_text": "Answer: 0.645714. Evidence: The average clustering coefficient of 'karate__5cffdc610929f590' is 0.645714 over 10 nodes; the highest is Member 8 (m8) with 1.0. Showing the top 10 nodes.",
+    "answer": {
+      "type": "number",
+      "value": 0.645714
+    },
+    "tools_used": [
+      "k_core.3f28ff34",
+      "clustering_coefficient.da50612d"
+    ],
+    "trace_file": "traces/q20.jsonl"
+  },
+  {
+    "query_id": "q21",
+    "status": "answered",
+    "answer_text": "Answer: \"c40\". Evidence: Valjean (c74) lies on the most shortest paths in 'lesmis__446e515c73705bc9', with normalised betweenness on hop-count shortest paths of 0.755015; the top 10 of 37 nodes are listed.",
+    "answer": {
+      "type": "node",
+      "value": "c40"
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.lookup_node",
+      "ego_network.51616f3b",
+      "betweenness_centrality.2f7893e5"
+    ],
+    "trace_file": "traces/q21.jsonl"
+  },
+  {
+    "query_id": "q22",
+    "status": "answered",
+    "answer_text": "Answer: 44. Evidence: Javert (c40) has clustering coefficient 0.323529, meaning 32% of the possible links among its neighbours exist. The average clustering of 'lesmis' is 0.573137.",
+    "answer": {
+      "type": "number",
+      "value": 44
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.lookup_node",
+      "clustering_coefficient.da50612d"
+    ],
+    "trace_file": "traces/q22.jsonl"
+  },
+  {
+    "query_id": "q24",
+    "status": "clarification_needed",
+    "answer_text": "Which graph should I analyse?",
+    "answer": {
+      "type": "text",
+      "value": "Please specify the graph."
+    },
+    "tools_used": [],
+    "trace_file": "traces/q24.jsonl"
+  },
+  {
+    "query_id": "q26",
+    "status": "clarification_needed",
+    "answer_text": "Which measure of closeness do you mean: the number of hops, weighted distance or interaction strength, or similarity of connections?",
+    "answer": {
+      "type": "text",
+      "value": "Which measure of closeness do you mean: the number of hops, weighted distance or interaction strength, or similarity of connections?"
+    },
+    "tools_used": [],
+    "trace_file": "traces/q26.jsonl"
+  },
+  {
+    "query_id": "q30",
+    "status": "unsupported",
+    "answer_text": "Planar checking tool is not available in the toolset.",
+    "answer": {
+      "type": "text",
+      "value": "Planar checking tool is not available in the toolset."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q30.jsonl"
+  }
+]

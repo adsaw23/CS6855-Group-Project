@@ -1,0 +1,336 @@
+[
+  {
+    "query_id": "q01",
+    "status": "answered",
+    "answer_text": "Answer: 20058. Evidence: Graph 'airports' (directed, weighted) has 500 nodes and 20058 edges; density is 0.080393 and the average degree is 80.232. On average a node has 40.116 outgoing edges and the same number of incoming edges.",
+    "answer": {
+      "type": "number",
+      "value": 20058
+    },
+    "tools_used": [
+      "graph_summary.2f7893e5"
+    ],
+    "trace_file": "traces/q01.jsonl"
+  },
+  {
+    "query_id": "q02",
+    "status": "answered",
+    "answer_text": "Answer: \"FRA\". Evidence: Frankfurt am Main Airport (FRA) has the highest degree centrality (0.847695, raw count 423) among 500 nodes.",
+    "answer": {
+      "type": "node",
+      "value": "FRA"
+    },
+    "tools_used": [
+      "degree_centrality.54d073a3"
+    ],
+    "trace_file": "traces/q02.jsonl"
+  },
+  {
+    "query_id": "q03",
+    "status": "answered",
+    "answer_text": "Answer: 2. Evidence: The fewest-hop path from Chennai International Airport (MAA) to Humberto Delgado Airport (Lisbon Portela Airport) (LIS) uses 2 hops.",
+    "answer": {
+      "type": "number",
+      "value": 2
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.lookup_node",
+      "shortest_path_unweighted.8809b513"
+    ],
+    "trace_file": "traces/q03.jsonl"
+  },
+  {
+    "query_id": "q04",
+    "status": "answered",
+    "answer_text": "Answer: [\"MAA\", \"DEL\", \"JFK\"]. Evidence: The shortest path from Chennai International Airport (MAA) to John F Kennedy International Airport (JFK) has total weight 13,515 over 2 edge(s): MAA -> DEL -> JFK.",
+    "answer": {
+      "type": "path",
+      "value": [
+        "MAA",
+        "DEL",
+        "JFK"
+      ]
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.lookup_node",
+      "builtin.lookup_node",
+      "shortest_path_weighted.32016695"
+    ],
+    "trace_file": "traces/q04.jsonl"
+  },
+  {
+    "query_id": "q05",
+    "status": "answered",
+    "answer_text": "Answer: [\"FRA\", \"CDG\", \"AMS\", \"LHR\", \"DXB\"]. Evidence: Frankfurt am Main Airport (FRA) has the highest PageRank (0.013775) of 500 nodes in 'airports' (damping 0.85, weighted by edge weight, converged in 10 iterations). Showing the top 5.",
+    "answer": {
+      "type": "node_list",
+      "value": [
+        "FRA",
+        "CDG",
+        "AMS",
+        "LHR",
+        "DXB"
+      ]
+    },
+    "tools_used": [
+      "pagerank.da50612d"
+    ],
+    "trace_file": "traces/q05.jsonl"
+  },
+  {
+    "query_id": "q06",
+    "status": "answered",
+    "answer_text": "Answer: [\"DXB\", \"DOH\", \"FRA\", \"KUL\", \"SIN\"]. Evidence: Most relevant to Chennai International Airport (MAA): Dubai International Airport (DXB, 0.014518), Hamad International Airport (DOH, 0.013627), Frankfurt am Main Airport (FRA, 0.013128) (damping 0.85, source excluded). 499 nodes receive a score. Showing the top 5.",
+    "answer": {
+      "type": "node_list",
+      "value": [
+        "DXB",
+        "DOH",
+        "FRA",
+        "KUL",
+        "SIN"
+      ]
+    },
+    "tools_used": [
+      "builtin.lookup_node",
+      "personalized_pagerank.e1e14ad1"
+    ],
+    "trace_file": "traces/q06.jsonl"
+  },
+  {
+    "query_id": "q07",
+    "status": "answered",
+    "answer_text": "Answer: true. Evidence: 'airports' is strongly connected: every one of its 500 nodes can reach every other. The component is registered as 'airports__ecac15e637c530a4'.",
+    "answer": {
+      "type": "boolean",
+      "value": true
+    },
+    "tools_used": [
+      "graph_summary.2f7893e5",
+      "strongly_connected_components.2f7893e5"
+    ],
+    "trace_file": "traces/q07.jsonl"
+  },
+  {
+    "query_id": "q08",
+    "status": "answered",
+    "answer_text": "Answer: [\"m1\", \"m34\", \"m33\"]. Evidence: Member 1 (instructor) (m1) lies on the most shortest paths in 'karate', with normalised betweenness on hop-count shortest paths of 0.437635; the top 3 of 34 nodes are listed.",
+    "answer": {
+      "type": "node_list",
+      "value": [
+        "m1",
+        "m34",
+        "m33"
+      ]
+    },
+    "tools_used": [
+      "betweenness_centrality.2f7893e5"
+    ],
+    "trace_file": "traces/q08.jsonl"
+  },
+  {
+    "query_id": "q09",
+    "status": "answered",
+    "answer_text": "Answer: [\"m1\"]. Evidence: 'karate' has 1 articulation point and 1 bridge. Articulation points include Member 1 (instructor) (m1).",
+    "answer": {
+      "type": "node_list",
+      "value": [
+        "m1"
+      ]
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "articulation_points_bridges.3237bc9e"
+    ],
+    "trace_file": "traces/q09.jsonl"
+  },
+  {
+    "query_id": "q10",
+    "status": "answered",
+    "answer_text": "Answer: 5. Evidence: The largest clique in 'karate' has 5 nodes (Member 1 (instructor), Member 14, Member 2, Member 3, Member 4). 36 maximal clique(s) found; returning 10.",
+    "answer": {
+      "type": "number",
+      "value": 5
+    },
+    "tools_used": [
+      "maximal_cliques.62a230f4"
+    ],
+    "trace_file": "traces/q10.jsonl"
+  },
+  {
+    "query_id": "q11",
+    "status": "answered",
+    "answer_text": "Answer: 10.0. Evidence: Maximum flow from Member 1 (instructor) (m1) to Member 34 (administrator) (m34) is 10.0 using capacity 'unit'. The minimum cut (the bottleneck) has 10 edge(s) with total capacity 10.0, splitting the graph into a source side of 17 node(s) and a sink side of 17 node(s); largest cut edges: m1 -- m32 (1.0); m1 -- m9 (1.0); m10 -- m34 (1.0); m14 -- m34 (1.0); m2 -- m31 (1.0).",
+    "answer": {
+      "type": "number",
+      "value": 10.0
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.project_graph",
+      "builtin.inspect_graph",
+      "builtin.filter_nodes",
+      "builtin.filter_nodes",
+      "builtin.lookup_node",
+      "max_flow_min_cut.1e59ba80"
+    ],
+    "trace_file": "traces/q11.jsonl"
+  },
+  {
+    "query_id": "q12",
+    "status": "answered",
+    "answer_text": "Answer: 0.432432. Evidence: Valjean and Javert share 16 neighbour(s) (Jaccard 0.432432 over a union of 37 nodes).",
+    "answer": {
+      "type": "number",
+      "value": 0.432432
+    },
+    "tools_used": [
+      "builtin.lookup_node",
+      "node_similarity.29a7a55d"
+    ],
+    "trace_file": "traces/q12.jsonl"
+  },
+  {
+    "query_id": "q13",
+    "status": "answered",
+    "answer_text": "Answer: [\"CS101\", \"MA101\", \"MA102\", \"CS102\", \"CS202\", \"CS203\", \"MA201\", \"MA202\", \"CS201\", \"CS301\", \"CS302\", \"CS303\", \"CS304\", \"CS305\", \"CS306\", \"CS307\", \"CS401\", \"CS402\", \"CS403\", \"CS404\", \"CS405\"]. Evidence: 'courses' can be ordered in 5 stage(s) covering 21 node(s); stage 1 (no prerequisites) is Programming Basics, Calculus, Discrete Mathematics.",
+    "answer": {
+      "type": "node_list",
+      "value": [
+        "CS101",
+        "MA101",
+        "MA102",
+        "CS102",
+        "CS202",
+        "CS203",
+        "MA201",
+        "MA202",
+        "CS201",
+        "CS301",
+        "CS302",
+        "CS303",
+        "CS304",
+        "CS305",
+        "CS306",
+        "CS307",
+        "CS401",
+        "CS402",
+        "CS403",
+        "CS404",
+        "CS405"
+      ]
+    },
+    "tools_used": [
+      "topological_sort.63fb3e40"
+    ],
+    "trace_file": "traces/q13.jsonl"
+  },
+  {
+    "query_id": "q14",
+    "status": "answered",
+    "answer_text": "Answer: 9. Evidence: A maximum matching has 9 pairs between the 10 'project' nodes and the 16 'student' nodes; 1 'project' and 7 'student' nodes stay unmatched.",
+    "answer": {
+      "type": "number",
+      "value": 9
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "bipartite_matching.3f28ff34"
+    ],
+    "trace_file": "traces/q14.jsonl"
+  },
+  {
+    "query_id": "q15",
+    "status": "error",
+    "answer_text": "LLM HTTP 503; This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "answer": {
+      "type": "text",
+      "value": "LLM HTTP 503; This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.inspect_graph",
+      "builtin.filter_nodes",
+      "degree_centrality.54d073a3"
+    ],
+    "trace_file": "traces/q15.jsonl"
+  },
+  {
+    "query_id": "q16",
+    "status": "answered",
+    "answer_text": "Answer: 4122.0. Evidence: The minimum spanning tree connects 8 nodes with 7 edges and total weight 4122.000000. The registered graph contains the full tree.",
+    "answer": {
+      "type": "number",
+      "value": 4122.0
+    },
+    "tools_used": [
+      "builtin.inspect_graph",
+      "builtin.filter_nodes",
+      "minimum_spanning_tree.3ddaa37e"
+    ],
+    "trace_file": "traces/q16.jsonl"
+  },
+  {
+    "query_id": "q17",
+    "status": "answered",
+    "answer_text": "Answer: \"m2\". connections: 8. Evidence: Member 1 (instructor) (m1) has the highest degree centrality (1.0, raw count 16) among 17 nodes.",
+    "answer": {
+      "type": "node",
+      "value": "m2"
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.inspect_graph",
+      "builtin.lookup_node",
+      "ego_network.51616f3b",
+      "degree_centrality.54d073a3"
+    ],
+    "trace_file": "traces/q17.jsonl"
+  },
+  {
+    "query_id": "q18",
+    "status": "answered",
+    "answer_text": "Answer: \"ORD\". Evidence: Chicago O'Hare International Airport (ORD) lies on the most shortest paths in 'airports__5e93eb407baf66f7', with normalised betweenness on hop-count shortest paths of 0.040203; the top 5 of 74 nodes are listed.",
+    "answer": {
+      "type": "node",
+      "value": "ORD"
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "builtin.inspect_graph",
+      "builtin.filter_nodes",
+      "betweenness_centrality.2f7893e5"
+    ],
+    "trace_file": "traces/q18.jsonl"
+  },
+  {
+    "query_id": "q19",
+    "status": "answered",
+    "answer_text": "Answer: \"m34\". Evidence: Member 34 (administrator) (m34) has the highest PageRank (0.174978) of 19 nodes in 'karate__4ca480f0b747aba1' (damping 0.85, with every link counted equally, converged in 23 iterations). Showing the top 1.",
+    "answer": {
+      "type": "node",
+      "value": "m34"
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "girvan_newman.219c8a12",
+      "pagerank.da50612d"
+    ],
+    "trace_file": "traces/q19.jsonl"
+  },
+  {
+    "query_id": "q20",
+    "status": "error",
+    "answer_text": "LLM HTTP 503; This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "answer": {
+      "type": "text",
+      "value": "LLM HTTP 503; This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+    },
+    "tools_used": [
+      "k_core.3f28ff34"
+    ],
+    "trace_file": "traces/q20.jsonl"
+  }
+]

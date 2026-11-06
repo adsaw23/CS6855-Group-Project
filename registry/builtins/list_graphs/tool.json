@@ -1,0 +1,11 @@
+{
+  "name": "list_graphs",
+  "description": "List available graphs. All graph facts must come from tool results.",
+  "parameters": {
+    "type": "object",
+    "properties": {},
+    "required": [],
+    "additionalProperties": false
+  },
+  "implementation_id": "builtin.list_graphs"
+}

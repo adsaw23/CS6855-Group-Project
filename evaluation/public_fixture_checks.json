@@ -1,0 +1,124 @@
+{
+  "scope": "Only tool/executor correctness on built-in fixtures, NOT full public-set or LLM accuracy",
+  "networkx_version": "3.6.1",
+  "passed": 10,
+  "total": 10,
+  "results": [
+    {
+      "query_id": "q08",
+      "status": "answered",
+      "answer": {
+        "type": "node_list",
+        "value": [
+          "m1",
+          "m34",
+          "m33"
+        ]
+      },
+      "passed": true,
+      "reason": "Match",
+      "tool_calls": 1
+    },
+    {
+      "query_id": "q09",
+      "status": "answered",
+      "answer": {
+        "type": "node_list",
+        "value": [
+          "m1"
+        ]
+      },
+      "passed": true,
+      "reason": "Match",
+      "tool_calls": 1
+    },
+    {
+      "query_id": "q10",
+      "status": "answered",
+      "answer": {
+        "type": "number",
+        "value": 5
+      },
+      "passed": true,
+      "reason": "Match",
+      "tool_calls": 1
+    },
+    {
+      "query_id": "q11",
+      "status": "answered",
+      "answer": {
+        "type": "number",
+        "value": 10.0
+      },
+      "passed": true,
+      "reason": "Match",
+      "tool_calls": 2
+    },
+    {
+      "query_id": "q12",
+      "status": "answered",
+      "answer": {
+        "type": "number",
+        "value": 0.432432
+      },
+      "passed": true,
+      "reason": "Match",
+      "tool_calls": 1
+    },
+    {
+      "query_id": "q17",
+      "status": "answered",
+      "answer": {
+        "type": "node",
+        "value": "m2"
+      },
+      "passed": true,
+      "reason": "Match",
+      "tool_calls": 2
+    },
+    {
+      "query_id": "q19",
+      "status": "answered",
+      "answer": {
+        "type": "node",
+        "value": "m34"
+      },
+      "passed": true,
+      "reason": "Match",
+      "tool_calls": 2
+    },
+    {
+      "query_id": "q20",
+      "status": "answered",
+      "answer": {
+        "type": "number",
+        "value": 0.645714
+      },
+      "passed": true,
+      "reason": "Match",
+      "tool_calls": 2
+    },
+    {
+      "query_id": "q21",
+      "status": "answered",
+      "answer": {
+        "type": "node",
+        "value": "c40"
+      },
+      "passed": true,
+      "reason": "Match",
+      "tool_calls": 2
+    },
+    {
+      "query_id": "q22",
+      "status": "answered",
+      "answer": {
+        "type": "number",
+        "value": 96
+      },
+      "passed": true,
+      "reason": "Match",
+      "tool_calls": 2
+    }
+  ]
+}

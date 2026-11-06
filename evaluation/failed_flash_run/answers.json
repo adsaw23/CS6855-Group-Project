@@ -1,0 +1,13 @@
+[
+  {
+    "query_id": "q08",
+    "status": "error",
+    "answer_text": "LLM HTTP 503; retry later",
+    "answer": {
+      "type": "text",
+      "value": "LLM HTTP 503; retry later"
+    },
+    "tools_used": [],
+    "trace_file": "traces/q08.jsonl"
+  }
+]

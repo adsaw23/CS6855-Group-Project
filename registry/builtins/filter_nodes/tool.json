@@ -1,0 +1,28 @@
+{
+  "name": "filter_nodes",
+  "description": "Create an induced subgraph by exact case-insensitive attribute equality; optionally convert to undirected for MST.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "graph_id": {
+        "type": "string"
+      },
+      "attribute": {
+        "type": "string"
+      },
+      "value": {
+        "type": "string"
+      },
+      "undirected": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "graph_id",
+      "attribute",
+      "value"
+    ],
+    "additionalProperties": false
+  },
+  "implementation_id": "builtin.filter_nodes"
+}

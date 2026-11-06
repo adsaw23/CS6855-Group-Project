@@ -1,0 +1,25 @@
+{
+  "name": "project_graph",
+  "description": "Create a graph with undirected edges (minimum reciprocal weight), or unit edge weights/capacities for edge-disjoint paths.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "graph_id": {
+        "type": "string"
+      },
+      "mode": {
+        "type": "string",
+        "enum": [
+          "undirected",
+          "unit_weights"
+        ]
+      }
+    },
+    "required": [
+      "graph_id",
+      "mode"
+    ],
+    "additionalProperties": false
+  },
+  "implementation_id": "builtin.project_graph"
+}

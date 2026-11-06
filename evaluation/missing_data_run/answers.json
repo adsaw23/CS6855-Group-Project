@@ -1,0 +1,390 @@
+[
+  {
+    "query_id": "q01",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q01.jsonl"
+  },
+  {
+    "query_id": "q02",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q02.jsonl"
+  },
+  {
+    "query_id": "q03",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q03.jsonl"
+  },
+  {
+    "query_id": "q04",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q04.jsonl"
+  },
+  {
+    "query_id": "q05",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q05.jsonl"
+  },
+  {
+    "query_id": "q06",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q06.jsonl"
+  },
+  {
+    "query_id": "q07",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q07.jsonl"
+  },
+  {
+    "query_id": "q08",
+    "status": "error",
+    "answer_text": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q08.jsonl"
+  },
+  {
+    "query_id": "q09",
+    "status": "error",
+    "answer_text": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q09.jsonl"
+  },
+  {
+    "query_id": "q10",
+    "status": "error",
+    "answer_text": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q10.jsonl"
+  },
+  {
+    "query_id": "q11",
+    "status": "error",
+    "answer_text": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q11.jsonl"
+  },
+  {
+    "query_id": "q12",
+    "status": "error",
+    "answer_text": "Graph 'lesmis' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'lesmis' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q12.jsonl"
+  },
+  {
+    "query_id": "q13",
+    "status": "error",
+    "answer_text": "Graph 'courses' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'courses' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q13.jsonl"
+  },
+  {
+    "query_id": "q14",
+    "status": "error",
+    "answer_text": "Graph 'projects' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'projects' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q14.jsonl"
+  },
+  {
+    "query_id": "q15",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q15.jsonl"
+  },
+  {
+    "query_id": "q16",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q16.jsonl"
+  },
+  {
+    "query_id": "q17",
+    "status": "error",
+    "answer_text": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q17.jsonl"
+  },
+  {
+    "query_id": "q18",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q18.jsonl"
+  },
+  {
+    "query_id": "q19",
+    "status": "error",
+    "answer_text": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q19.jsonl"
+  },
+  {
+    "query_id": "q20",
+    "status": "error",
+    "answer_text": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q20.jsonl"
+  },
+  {
+    "query_id": "q21",
+    "status": "error",
+    "answer_text": "Graph 'lesmis' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'lesmis' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q21.jsonl"
+  },
+  {
+    "query_id": "q22",
+    "status": "error",
+    "answer_text": "Graph 'lesmis' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'lesmis' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q22.jsonl"
+  },
+  {
+    "query_id": "q23",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q23.jsonl"
+  },
+  {
+    "query_id": "q24",
+    "status": "clarification_needed",
+    "answer_text": "Which graph should I analyse?",
+    "answer": {
+      "type": "text",
+      "value": "Please specify the graph."
+    },
+    "tools_used": [],
+    "trace_file": "traces/q24.jsonl"
+  },
+  {
+    "query_id": "q25",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q25.jsonl"
+  },
+  {
+    "query_id": "q26",
+    "status": "error",
+    "answer_text": "Graph 'lesmis' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'lesmis' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q26.jsonl"
+  },
+  {
+    "query_id": "q27",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q27.jsonl"
+  },
+  {
+    "query_id": "q28",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q28.jsonl"
+  },
+  {
+    "query_id": "q29",
+    "status": "error",
+    "answer_text": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'airports' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q29.jsonl"
+  },
+  {
+    "query_id": "q30",
+    "status": "error",
+    "answer_text": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data.",
+    "answer": {
+      "type": "text",
+      "value": "Graph 'karate' is not loaded. Add the official dataset to /mnt/c/users/adity/sem7/cs6855/group project/data."
+    },
+    "tools_used": [
+      "builtin.list_graphs"
+    ],
+    "trace_file": "traces/q30.jsonl"
+  }
+]

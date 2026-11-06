@@ -1,0 +1,38 @@
+[
+  {
+    "query_id": "q08",
+    "status": "error",
+    "answer_text": "Planner did not produce a valid evidence-backed answer within the turn limit.",
+    "answer": {
+      "type": "text",
+      "value": "Planner turn limit exceeded"
+    },
+    "tools_used": [
+      "betweenness_centrality.2f7893e5",
+      "builtin.list_graphs",
+      "betweenness_centrality.2f7893e5",
+      "betweenness_centrality.2f7893e5"
+    ],
+    "trace_file": "traces/q08.jsonl"
+  },
+  {
+    "query_id": "q09",
+    "status": "error",
+    "answer_text": "Planner did not produce a valid evidence-backed answer within the turn limit.",
+    "answer": {
+      "type": "text",
+      "value": "Planner turn limit exceeded"
+    },
+    "tools_used": [
+      "builtin.list_graphs",
+      "articulation_points_bridges.3237bc9e",
+      "builtin.list_graphs",
+      "articulation_points_bridges.3237bc9e",
+      "builtin.list_graphs",
+      "articulation_points_bridges.3237bc9e",
+      "builtin.list_graphs",
+      "articulation_points_bridges.3237bc9e"
+    ],
+    "trace_file": "traces/q09.jsonl"
+  }
+]

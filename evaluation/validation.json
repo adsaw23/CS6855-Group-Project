@@ -1,0 +1,40 @@
+{
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0]",
+  "dependencies": {
+    "networkx": "3.6.1",
+    "numpy": "2.2.4",
+    "scipy": "1.15.2",
+    "jsonschema": "4.26.0",
+    "requests": "2.34.2"
+  },
+  "verification": {
+    "clean_dependency_install": "passed",
+    "unittest_cases": 27,
+    "unittest_passed": 27,
+    "randomized_oracle_comparisons": 54,
+    "clean_zip_extraction_tests": "27/27 passed",
+    "public_dataset_cases": 30,
+    "public_dataset_passed": 30,
+    "trace_audit": "30/30 exact tool-output replays and evidence checks passed",
+    "tool_calls": {
+      "total": 68,
+      "mean": 2.2666666666666666,
+      "maximum": 7,
+      "at_most_five": 29
+    },
+    "original_readme_matches_preserved_backup": true,
+    "selected_tool_sources": "33 families hash-verified against curation records",
+    "dataset_files": "12 files hash-verified against pinned source provenance",
+    "credential_scan": "No API-key pattern found in code, data, evaluation or traces"
+  },
+  "limitations": [
+    "Group 8 and all member identities are filled in. Proposed responsibilities require confirmation of actual contributions.",
+    "Provider quotas and availability can cause future transient errors.",
+    "Public correctness does not guarantee hidden-set correctness."
+  ],
+  "historical_runs": "Earlier failed and fixture-only runs remain under evaluation; final results are answers_public.json, traces/, public_score.json and trace_audit.json.",
+  "account_tiers": {
+    "Codex": "free tier, confirmed by the user",
+    "Google AI Studio": "free tier, confirmed by the user"
+  }
+}

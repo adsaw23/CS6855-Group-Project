@@ -1,0 +1,91 @@
+{
+  "repository": "https://github.com/smiitm/mas-project",
+  "commit": "8127602f50c87ca92798beb53c834dbe02744676",
+  "scope": "Dataset files only. No orchestrator, tool implementations or other group code copied.",
+  "files": [
+    {
+      "source_path": "data/graphs.json",
+      "local_path": "data/graphs.json",
+      "url": "https://raw.githubusercontent.com/smiitm/mas-project/8127602f50c87ca92798beb53c834dbe02744676/data/graphs.json",
+      "sha256": "e2ae6feb06c2c087f8e597f0eaeb1c387b252091717582b0107c74c14fec1ea6",
+      "bytes": 2212
+    },
+    {
+      "source_path": "data/README.md",
+      "local_path": "data/SOURCE_README.md",
+      "url": "https://raw.githubusercontent.com/smiitm/mas-project/8127602f50c87ca92798beb53c834dbe02744676/data/README.md",
+      "sha256": "929067404af9103cdef67cd5a1b65992406dffe233a758564636646281b572a2",
+      "bytes": 2062
+    },
+    {
+      "source_path": "data/airports/nodes.csv",
+      "local_path": "data/airports/nodes.csv",
+      "url": "https://raw.githubusercontent.com/smiitm/mas-project/8127602f50c87ca92798beb53c834dbe02744676/data/airports/nodes.csv",
+      "sha256": "161fe35b8713ae47323cd0907c662787f5ee9093d55955aaaffeecf4769e3f69",
+      "bytes": 34516
+    },
+    {
+      "source_path": "data/airports/edges.csv",
+      "local_path": "data/airports/edges.csv",
+      "url": "https://raw.githubusercontent.com/smiitm/mas-project/8127602f50c87ca92798beb53c834dbe02744676/data/airports/edges.csv",
+      "sha256": "63191ea334318b1a799330d2b1847a9bb5d7d146edecd0d4dd8ba2dfc971c499",
+      "bytes": 295864
+    },
+    {
+      "source_path": "data/karate/nodes.csv",
+      "local_path": "data/karate/nodes.csv",
+      "url": "https://raw.githubusercontent.com/smiitm/mas-project/8127602f50c87ca92798beb53c834dbe02744676/data/karate/nodes.csv",
+      "sha256": "54e2c036fd70acd7a18440cddf9f786845328364d0411aa88b463fb5e7be47a9",
+      "bytes": 756
+    },
+    {
+      "source_path": "data/karate/edges.csv",
+      "local_path": "data/karate/edges.csv",
+      "url": "https://raw.githubusercontent.com/smiitm/mas-project/8127602f50c87ca92798beb53c834dbe02744676/data/karate/edges.csv",
+      "sha256": "b5a2b6b6e192ef4e1736f4b36f0068aa73e81d3fbd1e86bf4758d308b3c32111",
+      "bytes": 740
+    },
+    {
+      "source_path": "data/lesmis/nodes.csv",
+      "local_path": "data/lesmis/nodes.csv",
+      "url": "https://raw.githubusercontent.com/smiitm/mas-project/8127602f50c87ca92798beb53c834dbe02744676/data/lesmis/nodes.csv",
+      "sha256": "013a32ad077e8d7b2b284bde61507dac2e615501a79ef985bf2611cf8041e2f1",
+      "bytes": 1068
+    },
+    {
+      "source_path": "data/lesmis/edges.csv",
+      "local_path": "data/lesmis/edges.csv",
+      "url": "https://raw.githubusercontent.com/smiitm/mas-project/8127602f50c87ca92798beb53c834dbe02744676/data/lesmis/edges.csv",
+      "sha256": "fdaf2e142bd57c82a04936a68fa11a7b19527ccfb81ef5b33381d73bd9514f3b",
+      "bytes": 2574
+    },
+    {
+      "source_path": "data/courses/nodes.csv",
+      "local_path": "data/courses/nodes.csv",
+      "url": "https://raw.githubusercontent.com/smiitm/mas-project/8127602f50c87ca92798beb53c834dbe02744676/data/courses/nodes.csv",
+      "sha256": "ae84b45a01c9c6980cb6dd8d23289ef92fbfa4c34e5311b54b036ed5e1c1b41d",
+      "bytes": 594
+    },
+    {
+      "source_path": "data/courses/edges.csv",
+      "local_path": "data/courses/edges.csv",
+      "url": "https://raw.githubusercontent.com/smiitm/mas-project/8127602f50c87ca92798beb53c834dbe02744676/data/courses/edges.csv",
+      "sha256": "5eec00090efd007cc89df5dc65519d2b63666be8055a64622bf6068e4a8afc4d",
+      "bytes": 427
+    },
+    {
+      "source_path": "data/projects/nodes.csv",
+      "local_path": "data/projects/nodes.csv",
+      "url": "https://raw.githubusercontent.com/smiitm/mas-project/8127602f50c87ca92798beb53c834dbe02744676/data/projects/nodes.csv",
+      "sha256": "65f38a39ffdda55de7051813ae134b3ac64897dd31a8e6e323cc9ebedc3d4e79",
+      "bytes": 612
+    },
+    {
+      "source_path": "data/projects/edges.csv",
+      "local_path": "data/projects/edges.csv",
+      "url": "https://raw.githubusercontent.com/smiitm/mas-project/8127602f50c87ca92798beb53c834dbe02744676/data/projects/edges.csv",
+      "sha256": "ae4ef1681f0e1e7fa17453c13868bab481867192e88c8c77d011c1c37d0dee0c",
+      "bytes": 301
+    }
+  ]
+}

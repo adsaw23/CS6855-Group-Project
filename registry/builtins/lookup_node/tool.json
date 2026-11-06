@@ -1,0 +1,26 @@
+{
+  "name": "lookup_node",
+  "description": "Resolve multiple names or IDs in one call; do not guess IDs. Ambiguous matches require clarification.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "graph_id": {
+        "type": "string"
+      },
+      "names": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1,
+        "maxItems": 10
+      }
+    },
+    "required": [
+      "graph_id",
+      "names"
+    ],
+    "additionalProperties": false
+  },
+  "implementation_id": "builtin.lookup_node"
+}
