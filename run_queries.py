@@ -55,7 +55,7 @@ def main():
     trace_dir.mkdir(exist_ok=True)
     records = {}
     if args.only and out.exists():
-        records = {a["query_id"]: a for a in json.loads(out.read_text())}
+        records = {a["query_id"]: a for a in json.loads(out.read_text(encoding="utf-8"))}
     answers = list(records.values())
     stems = trace_names(all_queries)
     for query in queries:
@@ -126,11 +126,13 @@ def main():
             records[query["query_id"]] = result
             answers = [records[q["query_id"]] for q in all_queries if q["query_id"] in records]
         temporary = out.with_suffix(out.suffix + ".tmp")
-        temporary.write_text(json.dumps(answers, indent=2, ensure_ascii=False) + "\n")
+        temporary.write_text(
+            json.dumps(answers, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+        )
         temporary.replace(out)
         print(f"{query['query_id']}: {result['status']}")
     if not queries:
-        out.write_text("[]\n")
+        out.write_text("[]\n", encoding="utf-8")
     return 1 if any(a["status"] == "error" for a in answers) else 0
 
 

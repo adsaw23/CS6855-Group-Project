@@ -97,11 +97,11 @@ def read_raw(path):
     if path.suffix.lower() == ".xlsx":
         return spreadsheet_rows(path)
     if path.suffix.lower() == ".jsonl":
-        return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+        return [json.loads(line) for line in path.read_text(encoding="utf-8-sig").splitlines() if line.strip()]
     if path.suffix.lower() == ".csv":
         with path.open(newline="", encoding="utf-8-sig") as f:
             return list(csv.DictReader(f))
-    raw = json.loads(path.read_text())
+    raw = json.loads(path.read_text(encoding="utf-8-sig"))
     return raw["queries"] if isinstance(raw, dict) else raw
 
 

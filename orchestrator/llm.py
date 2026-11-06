@@ -35,7 +35,7 @@ class LLMClient:
         path = self.cache / (digest + ".json")
         self.trace({"event": "llm_request", "request_id": digest, "request": body})
         if path.exists():
-            response = json.loads(path.read_text())
+            response = json.loads(path.read_text(encoding="utf-8"))
             self.trace(
                 {
                     "event": "llm_response",
@@ -132,7 +132,7 @@ class LLMClient:
             if not data.get("choices"):
                 raise ValueError("LLM response has no choices")
             temporary = path.with_suffix(".tmp")
-            temporary.write_text(json.dumps(data, ensure_ascii=False))
+            temporary.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
             temporary.replace(path)
             self.trace(
                 {"event": "llm_response", "request_id": digest, "cached": False, "response": data}

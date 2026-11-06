@@ -122,7 +122,7 @@ BUILTIN_ROOT = Path(__file__).resolve().parents[1] / "registry/builtins"
 SCHEMAS = []
 FUNCTIONS = {}
 for manifest_path in sorted(BUILTIN_ROOT.glob("*/tool.json")):
-    manifest = json.loads(manifest_path.read_text())
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     name = manifest["name"]
     FUNCTIONS[name] = globals()[name]
     SCHEMAS.append(

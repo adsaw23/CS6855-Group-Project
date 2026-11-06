@@ -205,7 +205,7 @@ class GraphStore:
         for path in sorted(directory.glob("*.json")):
             if path == manifest:
                 continue
-            raw = json.loads(path.read_text())
+            raw = json.loads(path.read_text(encoding="utf-8"))
             if (
                 not isinstance(raw, dict)
                 or "nodes" not in raw

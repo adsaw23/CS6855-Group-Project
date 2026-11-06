@@ -45,7 +45,7 @@ class Registry:
     def __init__(self, root="registry/tools"):
         self.entries = {}
         for path in sorted(Path(root).glob("*/*/tool.json")):
-            manifest = json.loads(path.read_text())
+            manifest = json.loads(path.read_text(encoding="utf-8"))
             name = manifest["name"]
             if name in self.entries:
                 raise ValueError(f"More than one curated implementation of {name}")
