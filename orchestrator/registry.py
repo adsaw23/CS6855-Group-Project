@@ -10,6 +10,9 @@ from pathlib import Path
 import jsonschema
 from graphkit.contract import error
 
+# Categories whose weighting flags default to false unless the planner passes true.
+UNWEIGHTED_BY_DEFAULT = ("centrality", "community")
+
 
 @contextmanager
 def deadline(seconds):
@@ -54,7 +57,7 @@ class Registry:
     def prepare_arguments(self, name, arguments):
         arguments = dict(arguments)
         manifest = self.entries[name][0]
-        if manifest.get("category") == "centrality":
+        if manifest.get("category") in UNWEIGHTED_BY_DEFAULT:
             for parameter in ("weighted", "use_weights"):
                 if parameter in manifest["parameters"]["properties"]:
                     arguments.setdefault(parameter, False)
@@ -66,7 +69,7 @@ class Registry:
             parameters = copy.deepcopy(manifest["parameters"])
             parameters["additionalProperties"] = False
             description = manifest["description"]
-            if manifest.get("category") == "centrality":
+            if manifest.get("category") in UNWEIGHTED_BY_DEFAULT:
                 flags = [p for p in ("weighted", "use_weights") if p in parameters["properties"]]
                 for parameter in flags:
                     parameters["properties"][parameter]["default"] = False

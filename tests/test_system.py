@@ -531,6 +531,22 @@ class SystemTests(unittest.TestCase):
         self.assertFalse(store.get("karate").weighted)
         self.assertIsInstance(store.get("airports").node_attrs("MAA")["lat"], float)
 
+    def test_community_tools_default_unweighted(self):
+        for name in ("louvain", "girvan_newman"):
+            with self.subTest(tool=name):
+                self.assertEqual(
+                    {"graph_id": "lesmis", "weighted": False},
+                    self.registry.prepare_arguments(name, {"graph_id": "lesmis"}),
+                )
+                self.assertTrue(
+                    self.registry.prepare_arguments(name, {"weighted": True})["weighted"]
+                )
+                advertised = next(
+                    s for s in self.registry.schemas() if s["function"]["name"] == name
+                )
+                props = advertised["function"]["parameters"]["properties"]
+                self.assertFalse(props["weighted"]["default"])
+
     def test_centrality_defaults_and_explicit_weight_override(self):
         store = self.store()
         g = store.get("test")._graph
