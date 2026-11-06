@@ -53,7 +53,7 @@ def main():
     def footer(canvas, doc):
         canvas.setFont("Helvetica", 8)
         canvas.setFillColor(colors.grey)
-        canvas.drawString(42, 24, "CS6855 | Group 8 | Contribution statement pending confirmation")
+        canvas.drawString(42, 24, "CS6855 | Group 8")
         canvas.drawRightString(A4[0] - 42, 24, str(doc.page))
 
     SimpleDocTemplate(

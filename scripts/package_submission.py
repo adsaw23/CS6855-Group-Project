@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a credential-free draft ZIP with only the selected tool registry."""
+"""Build a credential-free submission ZIP with only the selected tool registry."""
 
 from pathlib import Path
 import zipfile
@@ -31,7 +31,7 @@ DIRECTORIES = [
 
 
 def main():
-    target = ROOT / "dist/submission_draft.zip"
+    target = ROOT / "dist/CS6855_Group_project_8.zip"
     target.parent.mkdir(exist_ok=True)
     paths = [ROOT / f for f in FILES]
     for directory in DIRECTORIES:
