@@ -33,7 +33,7 @@ The final public run successfully passes all 30 out of 30 questions against the 
 
 The run used a total of 68 graph and utility calls, with an average of 2.27 calls per question. Twenty-nine questions were completed using five or fewer calls. q11 required seven calls because it involved additional metadata, lookup, and projection calls. Reducing these additional calls remains a useful optimization.
 
-All 30 traces pass a separate audit that reruns the tools, compares their complete outputs, and evaluates the recorded answer expressions. The local test suite contains 27 passing tests, including 54 numerical comparisons across six seeded random graphs. It also checks input parsing, source hashes, ambiguity handling, provider errors, subgraph chaining, and incremental reruns. The tests also pass when executed from an extracted submission ZIP.
+All 30 traces pass a separate audit that reruns the tools, compares their complete outputs, and evaluates the recorded answer expressions. The local test suite contains 29 passing tests, including 54 numerical comparisons across six seeded random graphs. It also checks input parsing, source hashes, ambiguity handling, provider errors, subgraph chaining, and incremental reruns. The tests also pass when executed from an extracted submission ZIP.
 
 Before the datasets were available, smaller fixture runs were used to test the planner and executor. Earlier failed runs are retained under evaluation/ to document the changes made during development. The final score was achieved after fixes and retries; it was not the score obtained in the first run. Public-set success does not guarantee accuracy on the hidden set, and future runs may still fail if the provider is unavailable or a quota limit is reached.
 
@@ -89,14 +89,6 @@ Responsible for `run_queries.py`, `orchestrator/queries.py`, `PROJECT_README.md`
 ## AI assistance
 
 OpenAI Codex was used for debugging and testing purposes. Google AI Studio's Gemini was used for runtime function calling. Both services were used under their respective free-tier plans, as confirmed by the team.
-
-## Running the project
-
-PROJECT_README.md contains setup instructions. The API key is supplied through
-GEMINI_API_KEY. Run python run_queries.py --queries queries_public.json --out
-answers_public.json to evaluate the public set. The report and ZIP can be rebuilt
-with scripts/build_report.py and scripts/package_submission.py after confirming
-the contribution statement.
 
 ## References
 
