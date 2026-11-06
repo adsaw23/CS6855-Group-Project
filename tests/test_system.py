@@ -423,6 +423,16 @@ class SystemTests(unittest.TestCase):
         self.assertIsNone(clarification_reason("How close are Alice and Bob in hops?"))
         self.assertIsNone(clarification_reason("Which member is most important by PageRank?"))
         self.assertIsNone(clarification_reason("Which five nodes are most relevant to Alice?"))
+        # A stated measure defers to the planner instead of forcing clarification.
+        for question in [
+            "Which karate member is the most important in terms of number of friends?",
+            "Which airport is the most central by number of routes?",
+            "Who is the most important character, measured by connections?",
+            "Which member is most central in terms of eigenvector centrality?",
+        ]:
+            self.assertIsNone(clarification_reason(question), question)
+        self.assertIsNotNone(clarification_reason("Which node is the most important?"))
+        self.assertIsNotNone(clarification_reason("How close are Marius and Cosette?"))
         logs = []
         agent = Agent(self.registry, self.store(), ScriptedClient([]), logs.append)
         result = agent.run({"graph_id": "test", "question": "How close are Alice and Bob?"})
